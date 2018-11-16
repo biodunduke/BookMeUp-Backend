@@ -11,10 +11,8 @@ module.exports = {
       var allAds = adsRef.get()
           .then(snapshot => {
             snapshot.forEach(doc => {
-              payload = doc.data()
-              data.push(payload)
+              res.send(doc.data())
             });
-            res.send(data);
           })
           .catch(err => {
             console.log('Error getting documents', err);
@@ -28,7 +26,7 @@ module.exports = {
       let bookPrice = req.body.bookPrice;
       let bookCondition = req.body.bookCondition;
       let bookPicUrl = req.body.bookPicUrl;
-      var adsDoc = db.collection('ads').add({
+      var adsDoc = db.collection('ads').doc().add({
         posterId: posterId,
         bookName: bookName,
         bookAuthor: bookAuthor,
