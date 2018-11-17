@@ -1,0 +1,241 @@
+[1mdiff --git a/app/build.gradle b/app/build.gradle[m
+[1mindex f9f9fc2..4c8449b 100644[m
+[1m--- a/app/build.gradle[m
+[1m+++ b/app/build.gradle[m
+[36m@@ -27,6 +27,7 @@[m [mdependencies {[m
+     implementation 'com.facebook.android:facebook-login:[4,5)'[m
+     implementation 'com.squareup.picasso:picasso:2.71828'[m
+     implementation 'com.amitshekhar.android:jackson-android-networking:1.0.2'[m
+[32m+[m[32m    implementation 'com.android.support:design:28.0.0'[m
+     implementation 'com.android.support:appcompat-v7:28.0.0'[m
+     implementation 'de.hdodenhof:circleimageview:2.2.0'[m
+     implementation 'com.android.support.constraint:constraint-layout:1.1.3'[m
+[1mdiff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml[m
+[1mindex fdb1cb0..0d242df 100644[m
+[1m--- a/app/src/main/AndroidManifest.xml[m
+[1m+++ b/app/src/main/AndroidManifest.xml[m
+[36m@@ -6,6 +6,7 @@[m
+ [m
+     <application[m
+         android:allowBackup="true"[m
+[32m+[m
+         android:icon="@mipmap/ic_launcher"[m
+         android:label="@string/app_name"[m
+         android:roundIcon="@mipmap/ic_launcher_round"[m
+[1mdiff --git a/app/src/main/java/com/humber/bookmeup/MainActivity.java b/app/src/main/java/com/humber/bookmeup/MainActivity.java[m
+[1mindex 9fcfbed..8814cbc 100644[m
+[1m--- a/app/src/main/java/com/humber/bookmeup/MainActivity.java[m
+[1m+++ b/app/src/main/java/com/humber/bookmeup/MainActivity.java[m
+[36m@@ -2,10 +2,17 @@[m [mpackage com.humber.bookmeup;[m
+ [m
+ import android.content.Intent;[m
+ import android.support.annotation.NonNull;[m
+[32m+[m[32mimport android.support.design.widget.NavigationView;[m
+[32m+[m[32mimport android.support.v4.view.GravityCompat;[m
+[32m+[m[32mimport android.support.v4.widget.DrawerLayout;[m
+[32m+[m[32mimport android.support.v7.app.ActionBar;[m
+ import android.support.v7.app.AppCompatActivity;[m
+ import android.os.Bundle;[m
+[32m+[m[32mimport android.support.v7.widget.Toolbar;[m
+ import android.telecom.Call;[m
+ import android.util.Log;[m
+[32m+[m[32mimport android.view.MenuItem;[m
+[32m+[m[32mimport android.view.View;[m
+ import android.widget.Toast;[m
+ [m
+ import com.facebook.AccessToken;[m
+[36m@@ -25,11 +32,60 @@[m [mimport com.google.firebase.auth.FirebaseUser;[m
+ public class MainActivity extends AppCompatActivity {[m
+     private CallbackManager mCallbackManager;[m
+     private FirebaseAuth mAuth;[m
+[32m+[m[32m    private DrawerLayout mDrawerLayout;[m
+ [m
+     @Override[m
+     protected void onCreate(Bundle savedInstanceState) {[m
+         super.onCreate(savedInstanceState);[m
+         setContentView(R.layout.activity_main);[m
+[32m+[m
+[32m+[m[32m        NavigationView navigationView = findViewById(R.id.nav_view);[m
+[32m+[m[32m        navigationView.setNavigationItemSelectedListener([m
+[32m+[m[32m                new NavigationView.OnNavigationItemSelectedListener() {[m
+[32m+[m[32m                    @Override[m
+[32m+[m[32m                    public boolean onNavigationItemSelected(MenuItem menuItem) {[m
+[32m+[m[32m                        // set item as selected to persist highlight[m
+[32m+[m[32m                        menuItem.setChecked(true);[m
+[32m+[m[32m                        // close drawer when item is tapped[m
+[32m+[m[32m                        mDrawerLayout.closeDrawers();[m
+[32m+[m
+[32m+[m
+[32m+[m[32m                        Toolbar toolbar = findViewById(R.id.toolbar);[m
+[32m+[m[32m                        setSupportActionBar(toolbar);[m
+[32m+[m[32m                        ActionBar actionbar = getSupportActionBar();[m
+[32m+[m[32m                        actionbar.setDisplayHomeAsUpEnabled(true);[m
+[32m+[m[32m                        actionbar.setHomeAsUpIndicator(R.drawable.ic_launcher_background);[m
+[32m+[m[32m                        mDrawerLayout.addDrawerListener([m
+[32m+[m[32m                                new DrawerLayout.DrawerListener() {[m
+[32m+[m[32m                                    @Override[m
+[32m+[m[32m                                    public void onDrawerSlide(View drawerView, float slideOffset) {[m
+[32m+[m[32m                                        // Respond when the drawer's position changes[m
+[32m+[m[32m                                    }[m
+[32m+[m
+[32m+[m[32m                                    @Override[m
+[32m+[m[32m                                    public void onDrawerOpened(View drawerView) {[m
+[32m+[m[32m                                        // Respond when the drawer is opened[m
+[32m+[m[32m                                    }[m
+[32m+[m
+[32m+[m[32m                                    @Override[m
+[32m+[m[32m                                    public void onDrawerClosed(View drawerView) {[m
+[32m+[m[32m                                        // Respond when the drawer is closed[m
+[32m+[m[32m                                    }[m
+[32m+[m
+[32m+[m[32m                                    @Override[m
+[32m+[m[32m                                    public void onDrawerStateChanged(int newState) {[m
+[32m+[m[32m                                        // Respond when the drawer motion state changes[m
+[32m+[m[32m                                    }[m
+[32m+[m[32m                                }[m
+[32m+[m[32m                        );[m
+[32m+[m
+[32m+[m
+[32m+[m[32m                        // Add code here to update the UI based on the item selected[m
+[32m+[m[32m                        // For example, swap UI fragments here[m
+[32m+[m
+[32m+[m[32m                        return true;[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                });[m
+         // Initialize Facebook Login button[m
+         mCallbackManager = CallbackManager.Factory.create();[m
+         LoginButton loginButton = findViewById(R.id.login_button);[m
+[36m@@ -69,6 +125,16 @@[m [mpublic class MainActivity extends AppCompatActivity {[m
+         mCallbackManager.onActivityResult(requestCode, resultCode, data);[m
+     }[m
+ [m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public boolean onOptionsItemSelected(MenuItem item) {[m
+[32m+[m[32m        switch (item.getItemId()) {[m
+[32m+[m[32m            case android.R.id.home:[m
+[32m+[m[32m                mDrawerLayout.openDrawer(GravityCompat.START);[m
+[32m+[m[32m                return true;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        return super.onOptionsItemSelected(item);[m
+[32m+[m[32m    }[m
+[32m+[m
+     @Override[m
+     public void onStart() {[m
+         super.onStart();[m
+[1mdiff --git a/app/src/main/java/com/humber/bookmeup/ProfilePage.java b/app/src/main/java/com/humber/bookmeup/ProfilePage.java[m
+[1mindex 1732811..2bb2a4b 100644[m
+[1m--- a/app/src/main/java/com/humber/bookmeup/ProfilePage.java[m
+[1m+++ b/app/src/main/java/com/humber/bookmeup/ProfilePage.java[m
+[36m@@ -33,7 +33,7 @@[m [mimport java.util.List;[m
+ [m
+ import okhttp3.OkHttpClient;[m
+ [m
+[31m-public class ProfilePage extends AppCompatActivity {[m
+[32m+[m[32mpublic class ProfilePage extends AppCompatActivity  {[m
+     private String name,email,uid,providerId = "";[m
+     private Uri photoUrl;[m
+     public static final String TAG = "CONSOLE:";[m
+[1mdiff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml[m
+[1mindex 6437603..8fadd3b 100644[m
+[1m--- a/app/src/main/res/layout/activity_main.xml[m
+[1m+++ b/app/src/main/res/layout/activity_main.xml[m
+[36m@@ -1,27 +1,42 @@[m
+[31m-<?xml version="1.0" encoding="utf-8"?>[m
+[31m-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+[31m-    xmlns:app="http://schemas.android.com/apk/res-auto"[m
+[31m-    xmlns:tools="http://schemas.android.com/tools"[m
+[32m+[m[32m<!-- Use DrawerLayout as root container for activity -->[m
+[32m+[m[32m<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"[m
+[32m+[m[32mxmlns:app="http://schemas.android.com/apk/res-auto"[m
+[32m+[m[32mandroid:id="@+id/drawer_layout"[m
+[32m+[m[32mandroid:layout_width="match_parent"[m
+[32m+[m[32mandroid:layout_height="match_parent"[m
+[32m+[m[32mandroid:fitsSystemWindows="true">[m
+[32m+[m[32m    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->[m
+[32m+[m[32m<FrameLayout[m
+[32m+[m[32m    android:id="@+id/content_frame"[m
+     android:layout_width="match_parent"[m
+[31m-    android:layout_height="match_parent"[m
+[31m-    tools:context=".MainActivity">[m
+[32m+[m[32m    android:layout_height="match_parent" />[m
+ [m
+[32m+[m[32m    <android.support.v7.widget.Toolbar[m
+[32m+[m[32m        android:id="@+id/toolbar"[m
+[32m+[m[32m        android:layout_width="match_parent"[m
+[32m+[m[32m        android:layout_height="?attr/actionBarSize"[m
+[32m+[m[32m        android:background="?attr/colorPrimary"[m
+[32m+[m[32m        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />[m
+ [m
+[31m-    <com.facebook.login.widget.LoginButton[m
+[31m-        android:id="@+id/login_button"[m
+[31m-        android:layout_width="wrap_content"[m
+[31m-        android:layout_height="wrap_content"[m
+[31m-        android:layout_gravity="center_horizontal"[m
+[31m-        android:layout_marginTop="30dp"[m
+[31m-        android:layout_marginBottom="30dp" />[m
+[32m+[m[32m<com.facebook.login.widget.LoginButton[m
+[32m+[m[32m    android:id="@+id/login_button"[m
+[32m+[m[32m    android:layout_width="wrap_content"[m
+[32m+[m[32m    android:layout_height="wrap_content"[m
+[32m+[m[32m    android:layout_gravity="center_horizontal"[m
+[32m+[m[32m    android:layout_marginTop="30dp"[m
+[32m+[m[32m    android:layout_marginBottom="30dp"[m
+[32m+[m[32m    />[m
+ [m
+[31m-    <TextView[m
+[32m+[m[32m    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->[m
+[32m+[m[32m    <android.support.design.widget.NavigationView[m
+[32m+[m[32m        android:id="@+id/nav_view"[m
+         android:layout_width="wrap_content"[m
+[31m-        android:layout_height="wrap_content"[m
+[31m-        android:text="Hello World!"[m
+[31m-        app:layout_constraintBottom_toBottomOf="parent"[m
+[31m-        app:layout_constraintLeft_toLeftOf="parent"[m
+[31m-        app:layout_constraintRight_toRightOf="parent"[m
+[31m-        app:layout_constraintTop_toTopOf="parent" />[m
+[32m+[m[32m        android:layout_height="match_parent"[m
+[32m+[m[32m        android:layout_gravity="start"[m
+[32m+[m[32m        android:fitsSystemWindows="true"[m
+[32m+[m[32m        app:menu="@menu/drawer_view"[m
+[32m+[m[32m        app:headerLayout="@layout/nav_header"[m
+[32m+[m[32m        />[m
+[32m+[m
+[32m+[m[32m</android.support.v4.widget.DrawerLayout>[m
+ [m
+[31m-</android.support.constraint.ConstraintLayout>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml[m
+[1mindex bd19e2d..f4403dd 100644[m
+[1m--- a/app/src/main/res/values/strings.xml[m
+[1m+++ b/app/src/main/res/values/strings.xml[m
+[36m@@ -3,6 +3,9 @@[m
+     <string name="facebook_app_id">295044424680683</string>[m
+     <string name="fb_login_protocol_scheme">fb295044424680683</string>[m
+ [m
+[32m+[m[32m    <!-- TODO: Remove or change this placeholder text -->[m
+[32m+[m[32m    <string name="hello_blank_fragment">Hello blank fragment</string>[m
+[32m+[m
+ </resources>[m
+ [m
+ [m
+[1mdiff --git a/backend/controllers/adsController.js b/backend/controllers/adsController.js[m
+[1mindex 5f3f23c..e41383d 100644[m
+[1m--- a/backend/controllers/adsController.js[m
+[1m+++ b/backend/controllers/adsController.js[m
+[36m@@ -21,14 +21,13 @@[m [mmodule.exports = {[m
+ [m
+     },[m
+     postAd : function(req, res){[m
+[31m-      let posterId = req.body.posterId;[m
+[32m+[m[32m      let userId = req.body.userId;[m
+       let bookName = req.body.bookName;[m
+       let bookAuthor = req.body.bookAuthor;[m
+       let bookPrice = req.body.bookPrice;[m
+       let bookCondition = req.body.bookCondition;[m
+       let bookPicUrl = req.body.bookPicUrl;[m
+[31m-      var adsDoc = db.collection('ads').doc().add({[m
+[31m-        posterId: posterId,[m
+[32m+[m[32m      var adsDoc = db.collection('users').doc(userId).collection('adsCreated').add({[m
+         bookName: bookName,[m
+         bookAuthor: bookAuthor,[m
+         bookPrice: bookPrice,[m

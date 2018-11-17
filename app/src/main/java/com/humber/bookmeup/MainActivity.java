@@ -2,6 +2,11 @@ package com.humber.bookmeup;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telecom.Call;
@@ -12,6 +17,7 @@ import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.Profile;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,92 +29,63 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-    private CallbackManager mCallbackManager;
-    private FirebaseAuth mAuth;
+    FragmentPagerAdapter adapterViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Initialize Facebook Login button
-        mCallbackManager = CallbackManager.Factory.create();
-        LoginButton loginButton = findViewById(R.id.login_button);
-        loginButton.setReadPermissions("email", "public_profile");
-
-// ...
-// Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
-        loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                Log.d("kkk", "facebook:onSuccess:" + loginResult);
-                handleFacebookAccessToken(loginResult.getAccessToken());
-            }
-
-            @Override
-            public void onCancel() {
-                Log.d("kkkk", "facebook:onCancel");
-                // ...
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-                Log.d("bnb", "facebook:onError", error);
-                // ...
-            }
-        });
-
+        ViewPager vpPager = (ViewPager) findViewById(R.id.vpPagerProfile);
+        adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
+        vpPager.setAdapter(adapterViewPager);
     }
 
+    public static class MyPagerAdapter extends FragmentPagerAdapter {
+        private static int NUM_ITEMS = 2;
+        private static String pageTitle;
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        // Pass the activity result back to the Facebook SDK
-        mCallbackManager.onActivityResult(requestCode, resultCode, data);
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        //updateUI(currentUser);
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            Intent intent = new Intent(this, ProfilePage.class);
-            startActivity(intent);
+        public MyPagerAdapter(FragmentManager fragmentManager) {
+            super(fragmentManager);
         }
-    }
 
-    //private void updateUI(FirebaseUser user){}
+        // Returns total number of pages
+        @Override
+        public int getCount() {
+            return NUM_ITEMS;
+        }
 
-    private void handleFacebookAccessToken(AccessToken token) {
-        //Log.d("TAG ",handleFacebookAccessToken:" + token);
+        // Returns the fragment to display for that page
+        @Override
+        public Fragment getItem(int position) {
+            switch (position) {
+                case 0: // Fragment # 0 - This will show FirstFragment
+                    return NewListingFragment.newInstance(0, "New Ad");
+                case 1: //
+                    return ProfilePageFragment.newInstance(1, "New Ad");
+                default:
+                    return null;
+            }
+        }
 
-        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
+        // Returns the page title for the top indicator
+        @Override
+        public CharSequence getPageTitle(int position) {
 
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            //Log.d("TAG, "signInWithCredential:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            //updateUI(user);
-                            if (user != null) {
-                                Intent intent = new Intent(MainActivity.this, NewListing.class);
-                                startActivity(intent);
-                            }
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w("", "signInWithCredential:failure", task.getException());
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                         //   updateUI(null);
-                        }
-                    }
-                });
+            switch(position){
+                case 0:
+                    pageTitle = "New Listing";
+                    break;
+                case 1:
+                    pageTitle = "Profile Page";
+                    break;
+                    default:
+                        pageTitle="Title";
+                        break;
+            }
+            return pageTitle;
+        }
+
     }
 }
+
+

@@ -21,14 +21,13 @@ module.exports = {
 
     },
     postAd : function(req, res){
-      let posterId = req.body.posterId;
+      let userId = req.body.userId;
       let bookName = req.body.bookName;
       let bookAuthor = req.body.bookAuthor;
       let bookPrice = req.body.bookPrice;
       let bookCondition = req.body.bookCondition;
       let bookPicUrl = req.body.bookPicUrl;
-      var adsDoc = db.collection('ads').doc().add({
-        posterId: posterId,
+      var adsDoc = db.collection('users').doc(userId).collection('adsCreated').add({
         bookName: bookName,
         bookAuthor: bookAuthor,
         bookPrice: bookPrice,
