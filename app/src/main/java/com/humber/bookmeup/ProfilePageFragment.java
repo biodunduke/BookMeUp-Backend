@@ -111,7 +111,7 @@ public class ProfilePageFragment extends Fragment {
         listView.setAdapter(adapter);
 
 
-        AndroidNetworking.get("https://bb57afc5.ngrok.io/api/ads?userId={userId}")
+        AndroidNetworking.get("https://bb57afc5.ngrok.io/api/ad?userId={userId}")
                 .addPathParameter("userId", uid)
                 .setTag(this)
                 .setPriority(Priority.LOW)
