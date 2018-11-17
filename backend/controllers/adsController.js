@@ -27,6 +27,7 @@ module.exports = {
       let bookPrice = req.body.bookPrice;
       let bookCondition = req.body.bookCondition;
       let bookPicUrl = req.body.bookPicUrl;
+      let bookISBN = req.body.bookISBN;
       var adsDoc = db.collection('users').doc(userId).collection('adsCreated').add({
         bookName: bookName,
         bookAuthor: bookAuthor,
