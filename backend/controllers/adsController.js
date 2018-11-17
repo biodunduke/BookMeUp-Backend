@@ -5,14 +5,15 @@ module.exports = {
       res.send("getBook");
     },
     getAds : function(req, res){
-      var adsRef = db.collection('ads');
+      var adsRef = db.collection('users').doc(req.query.userId).collection('adsCreated');
       var payload = {};
       var data = []
       var allAds = adsRef.get()
           .then(snapshot => {
             snapshot.forEach(doc => {
-              res.send(doc.data())
+              data.push(doc.data())
             });
+            res.send(data)
           })
           .catch(err => {
             console.log('Error getting documents', err);

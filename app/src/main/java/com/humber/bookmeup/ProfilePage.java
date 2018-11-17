@@ -5,7 +5,9 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +27,9 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.OkHttpClient;
 
@@ -52,7 +57,6 @@ public class ProfilePage extends AppCompatActivity {
                 photoUrl = profile.getPhotoUrl();
             }
         }
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_page);
         TextView userName = findViewById(R.id.userName);
@@ -85,6 +89,36 @@ public class ProfilePage extends AppCompatActivity {
 
 
 
+        // Construct the data source
+        ArrayList<Advert> arrayOfUsers = new ArrayList<Advert>();
+        // Create the adapter to convert the array to views
+        final AdapterAdvert adapter = new AdapterAdvert(this, arrayOfUsers);
+        // Attach the adapter to a ListView
+        ListView listView = (ListView) findViewById(R.id.adsCurrent);
+        listView.setAdapter(adapter);
 
+
+        AndroidNetworking.get("https://bb57afc5.ngrok.io/api/ads?userId={userId}")
+                .addPathParameter("userId", uid)
+                .setTag(this)
+                .setPriority(Priority.LOW)
+                .build()
+                .getAsObjectList(Advert.class, new ParsedRequestListener<List<Advert>>() {
+                    @Override
+                    public void onResponse(List<Advert> adverts) {
+                        // do anything with response
+                        Toast.makeText(ProfilePage.this,adverts.toString(),Toast.LENGTH_LONG).show();
+                        for (Advert ad : adverts) {
+                            Advert mAd = new Advert(ad.getBookAuthor(),ad.getBookCondition(),ad.getBookName(),ad.getBookPicUrl(),ad.getBookPrice());
+                            adapter.addAll(mAd);
+                        }
+                    }
+                    @Override
+                    public void onError(ANError anError) {
+                        // handle error
+                        Toast.makeText(ProfilePage.this,anError.toString(),Toast.LENGTH_LONG).show();
+                        Log.d(TAG,anError.toString());
+                    }
+                });
     }
 }
