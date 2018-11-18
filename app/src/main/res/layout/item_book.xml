@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/mbookPicUrl"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="120dp"
         app:srcCompat="@drawable/com_facebook_button_like_icon_selected" />
 
     <TextView

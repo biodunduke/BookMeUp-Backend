@@ -2,7 +2,8 @@
  * David Uche
  * Abiodun Ojo
  * Elias
- *
+ ** This adapter is used to bind the data to the profile page view.
+ * Different from the profile page which uses adapterAdvert
  * */
 
 package com.humber.bookmeup.controllers;
@@ -12,10 +13,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.humber.bookmeup.R;
 import com.humber.bookmeup.models.Advert;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -33,18 +36,10 @@ public class AdapterAdvert extends ArrayAdapter<Advert> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_advert, parent, false);
         }
         // Lookup view for data population
-        TextView bookAuthor = (TextView) convertView.findViewById(R.id.bookAuthor);
-        TextView bookName = (TextView) convertView.findViewById(R.id.bookName);
-        TextView bookPicUrl = (TextView) convertView.findViewById(R.id.bookPicUrl);
-        TextView bookCondition = (TextView) convertView.findViewById(R.id.bookCondition);
-        TextView bookPrice = (TextView) convertView.findViewById(R.id.bookPrice);
+        ImageView imageView = convertView.findViewById(R.id.bookImage);
 
         // Populate the data into the template view using the data object
-        bookAuthor.setText(advert.bookName);
-        bookCondition.setText(advert.bookCondition);
-        bookPicUrl.setText(advert.bookPicUrl);
-        bookPrice.setText(advert.bookPrice);
-        bookName.setText(advert.bookName);
+        Picasso.get().load(advert.getBookPicUrl()).fit().into(imageView);
         // Return the completed view to render on screen
         return convertView;
     }

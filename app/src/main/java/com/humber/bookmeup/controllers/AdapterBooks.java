@@ -3,7 +3,10 @@
  * Abiodun Ojo
  * Elias
  *
+ * This adapter is used to bind the data to the listings view. It is the page described
+ * via the All Ads tab. Different from the profile page which uses adapterbooks
  * */
+
 package com.humber.bookmeup.controllers;
 
 import android.content.Context;

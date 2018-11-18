@@ -92,7 +92,7 @@ public class ProfilePageFragment extends Fragment {
         final RatingBar rating = view.findViewById(R.id.ratingBar);
 
         ImageView profilePic = view.findViewById(R.id.imageView);
-        Picasso.get().load(photoUrl).into(profilePic);
+        Picasso.get().load(photoUrl).fit().into(profilePic);
         userName.setText(name);
 
         /**Api to fetch the data for this specific user. Do note that since edit profile is not yet
@@ -136,7 +136,6 @@ public class ProfilePageFragment extends Fragment {
                     public void onResponse(List<Advert> adverts) {
                         // do anything with response
                         //Toast.makeText(getActivity(),adverts.toString(),Toast.LENGTH_LONG).show();
-                        //TODO: Change this to recycler view
                         for (Advert ad : adverts) {
                             Advert mAd = new Advert(ad.getBookAuthor(),ad.getBookCondition(),ad.getBookName(),ad.getBookPicUrl(),ad.getBookPrice());
                             adapter.addAll(mAd);
