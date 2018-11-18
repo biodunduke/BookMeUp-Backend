@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static class MyPagerAdapter extends FragmentPagerAdapter {
-        private static int NUM_ITEMS = 3;
+        private static int NUM_ITEMS = 4;
         private static String pageTitle;
 
         public MyPagerAdapter(FragmentManager fragmentManager) {
@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                     return ProfilePageFragment.newInstance(1, "New Ad");
                 case 2: //
                     return AllAdsFragment.newInstance(2, "New Ad");
+                case 3: //
+                    return AboutFragment.newInstance(3, "About");
                 default:
                     return null;
             }
@@ -77,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 2:
                     pageTitle = "All Ads";
+                    break;
+                case 3:
+                    pageTitle = "About Page";
                     break;
                     default:
                         pageTitle="Title";

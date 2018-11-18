@@ -162,11 +162,11 @@ public class NewListingFragment extends Fragment {
                 //TODO: reset edit text on submit
                 // Create a storage reference from our app
                 StorageReference storageRef = storage.getReference();
-                StorageReference mountainsRef = storageRef.child(bookISBN.getText().toString());
-                StorageReference mountainImagesRef = storageRef.child("images/users/"+uid+"/"+bookISBN.getText().toString());
+                StorageReference picsRef = storageRef.child(bookISBN.getText().toString());
+                StorageReference bookPicImageRef = storageRef.child("images/users/"+uid+"/"+bookISBN.getText().toString());
                 // While the file names are the same, the references point to different files
-                mountainsRef.getName().equals(mountainImagesRef.getName());    // true
-                mountainsRef.getPath().equals(mountainImagesRef.getPath());    // false
+                picsRef.getName().equals(bookPicImageRef.getName());    // true
+                picsRef.getPath().equals(bookPicImageRef.getPath());    // false
                 // Get the data from an ImageView as bytes
                 image.setDrawingCacheEnabled(true);
                 image.buildDrawingCache();
@@ -176,17 +176,17 @@ public class NewListingFragment extends Fragment {
                 byte[] data = baos.toByteArray();
 
                 //upload the image to cloud storage
-                UploadTask uploadTask = mountainsRef.putBytes(data);
+                UploadTask uploadTask = picsRef.putBytes(data);
                 uploadTask.addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception exception) {
                         // Handle unsuccessful uploads
-                        Toast.makeText(getActivity(),exception.toString(),Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getActivity(),exception.toString(),Toast.LENGTH_LONG).show();
                     }
                 }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                      Toast.makeText(getActivity(),taskSnapshot.toString(),Toast.LENGTH_LONG).show();
+                      //Toast.makeText(getActivity(),taskSnapshot.toString(),Toast.LENGTH_LONG).show();
                       /**Obtain the download uri to store in the backend so that we can view the images later on.*/
                         Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                             @Override
@@ -204,6 +204,7 @@ public class NewListingFragment extends Fragment {
                                     downloadUri = task.getResult();
                                     downloadUriStr=downloadUri.toString();
                                     Toast.makeText(getActivity(),"Upload successful",Toast.LENGTH_LONG).show();
+                                    /**Create new book instance to send to the api*/
                                     Book book = new Book();
                                     book.bookName = bookName.getText().toString();
                                     book.bookAuthor = bookAuthor.getText().toString();
@@ -212,7 +213,9 @@ public class NewListingFragment extends Fragment {
                                     book.userId = uid;
                                     book.bookPrice = Integer.valueOf(bookP.getText().toString());
                                     book.bookPicUrl = downloadUriStr;
-
+                                    /**Convert book to Json and add it to the database. We also
+                                     * store a reference to the storage bucket here for fetching in the listings
+                                     * and profile page view*/
                                     AndroidNetworking.post(api+"/api/ads")
                                             .addApplicationJsonBody(book)
                                             .build()
@@ -226,6 +229,7 @@ public class NewListingFragment extends Fragment {
                                                     // handle error
                                                 }
                                             });
+                                    //TODO: Reset state here
 
                                 } else {
                                     //TODO: Add else logic
@@ -234,9 +238,6 @@ public class NewListingFragment extends Fragment {
                         });
                     }
                 });
-
-
-
             }
         });
         return view;

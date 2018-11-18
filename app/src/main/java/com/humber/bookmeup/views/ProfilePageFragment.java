@@ -92,6 +92,11 @@ public class ProfilePageFragment extends Fragment {
         final RatingBar rating = view.findViewById(R.id.ratingBar);
 
         ImageView profilePic = view.findViewById(R.id.imageView);
+        /**Picasso library to help load and manipulate the images.
+         * http://square.github.io/picasso/
+         * The .fit() function makes the image fit within the dimensions of the specified image view
+         */
+
         Picasso.get().load(photoUrl).fit().into(profilePic);
         userName.setText(name);
 

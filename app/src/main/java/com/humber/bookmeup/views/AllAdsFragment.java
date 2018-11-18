@@ -14,6 +14,8 @@
 
 package com.humber.bookmeup.views;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -67,6 +69,11 @@ public class AllAdsFragment extends Fragment {
         page = getArguments().getInt("someInt", 2);
         title = getArguments().getString("someTitle");
 
+    }
+
+    @Override
+    public void onAttach(Context context){
+        super.onAttach(context);
         /**Api call to get all ads from firebase. For docs, check out https://github.com/amitshekhariitbhu/Fast-Android-Networking */
         /**Sample data returned:
          * [{"bookAuthor":"qqqqq","bookName":"ssdf",
@@ -84,6 +91,7 @@ public class AllAdsFragment extends Fragment {
                         for (Book b : books) {
                             /**Add each book returned in the payload to our dataset by populating our book model*/
                             myDataset.add(new Book(b.getBookName(), b.getBookAuthor(),b.getBookPicUrl(),b.getBookPrice()));
+                            Log.d("BOOK","BOOKS FETCHED");
                         }
                     }
                     @Override
@@ -107,6 +115,7 @@ public class AllAdsFragment extends Fragment {
         /**Use linear layout. could use gridlayout as well */
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
+
 
         /**Load our adapter with the fetched data */
         mAdapter = new AdapterBooks(myDataset);
