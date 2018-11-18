@@ -1,4 +1,14 @@
-package com.humber.bookmeup;
+/**
+ * David Uche
+ * Abiodun Ojo
+ * Elias
+ *
+ *
+ * Model for advert
+ * Needed when adding a new listing
+ * */
+
+package com.humber.bookmeup.models;
 
 public class Advert {
     public String bookAuthor;

@@ -1,4 +1,18 @@
-package com.humber.bookmeup;
+/**
+ * David Uche
+ * Abiodun Ojo
+ * Elias
+ *
+ *
+ * The purpose of this Activity is to handle facebook login. It does this
+ * By using the facebook sdk to handle authentication and checks whether the token
+ * is still active when the user opens the app. If so, they are directed to the main
+ * activity, else, they should login again
+ *
+ * */
+
+
+package com.humber.bookmeup.views;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -20,6 +34,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.humber.bookmeup.R;
 
 public class LoginActivity extends AppCompatActivity {
     private CallbackManager mCallbackManager;
@@ -28,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        // Initialize Facebook Login button
+
         mCallbackManager = CallbackManager.Factory.create();
         LoginButton loginButton = findViewById(R.id.login_button);
         loginButton.setReadPermissions("email", "public_profile");
@@ -36,21 +51,13 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                Log.d("kkk", "facebook:onSuccess:" + loginResult);
                 handleFacebookAccessToken(loginResult.getAccessToken());
             }
+            @Override
+            public void onCancel() { }
 
             @Override
-            public void onCancel() {
-                Log.d("kkkk", "facebook:onCancel");
-                // ...
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-                Log.d("bnb", "facebook:onError", error);
-                // ...
-            }
+            public void onError(FacebookException error) { }
         });
     }
 
@@ -60,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         // Pass the activity result back to the Facebook SDK
         mCallbackManager.onActivityResult(requestCode, resultCode, data);
     }
@@ -77,22 +83,17 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    //private void updateUI(FirebaseUser user){}
-
     private void handleFacebookAccessToken(AccessToken token) {
-        //Log.d("TAG ",handleFacebookAccessToken:" + token);
 
         AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
-
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            //Log.d("TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            //updateUI(user);
+                            /**If the user is already logged in, go to the main activity*/
                             if (user != null) {
                                  Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                  startActivity(intent);
@@ -102,7 +103,6 @@ public class LoginActivity extends AppCompatActivity {
                             Log.w("", "signInWithCredential:failure", task.getException());
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                            //   updateUI(null);
                         }
                     }
                 });

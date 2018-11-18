@@ -1,4 +1,13 @@
-package com.humber.bookmeup;
+/**
+ * David Uche
+ * Abiodun Ojo
+ * Elias
+ *
+ * Model for the User. Needed for user profile
+ *
+ * */
+
+package com.humber.bookmeup.models;
 
 public class User {
     public String country;
@@ -13,7 +22,6 @@ public class User {
         this.city = city;
         this.address = address;
         this.rating = rating;
-
     }
 
     public String getCountry(){

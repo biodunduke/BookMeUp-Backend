@@ -1,32 +1,27 @@
-package com.humber.bookmeup;
+/**
+ * David Uche
+ * Abiodun Ojo
+ * Elias
+ *
+ *
+ * The purpose of this Activity is to hold the fragments all together.
+ * It does this by implementing a fragmentpageradapter that loads each fragment
+ * into a specific tab on the activity. To implement a tablayout, we use
+ * a viewpager
+ *
+ * */
 
-import android.content.Intent;
-import android.support.annotation.NonNull;
+
+package com.humber.bookmeup.views;
+
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telecom.Call;
-import android.util.Log;
-import android.widget.Toast;
 
-import com.facebook.AccessToken;
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.Profile;
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FacebookAuthProvider;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import com.humber.bookmeup.R;
 
 public class MainActivity extends AppCompatActivity {
     FragmentPagerAdapter adapterViewPager;
@@ -41,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static class MyPagerAdapter extends FragmentPagerAdapter {
-        private static int NUM_ITEMS = 2;
+        private static int NUM_ITEMS = 3;
         private static String pageTitle;
 
         public MyPagerAdapter(FragmentManager fragmentManager) {
@@ -62,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
                     return NewListingFragment.newInstance(0, "New Ad");
                 case 1: //
                     return ProfilePageFragment.newInstance(1, "New Ad");
+                case 2: //
+                    return AllAdsFragment.newInstance(2, "New Ad");
                 default:
                     return null;
             }
@@ -77,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 1:
                     pageTitle = "Profile Page";
+                    break;
+                case 2:
+                    pageTitle = "All Ads";
                     break;
                     default:
                         pageTitle="Title";

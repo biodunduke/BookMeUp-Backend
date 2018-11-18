@@ -1,4 +1,14 @@
-package com.humber.bookmeup;
+/**
+ * David Uche
+ * Abiodun Ojo
+ * Elias
+ *
+ * The purpose of this class is to display the user profile.
+ * The model User is used to fetch and post data from the endpoint
+ *
+ * */
+
+package com.humber.bookmeup.views;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -20,6 +30,10 @@ import com.androidnetworking.interfaces.ParsedRequestListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
+import com.humber.bookmeup.R;
+import com.humber.bookmeup.controllers.AdapterAdvert;
+import com.humber.bookmeup.models.Advert;
+import com.humber.bookmeup.models.User;
 import com.jacksonandroidnetworking.JacksonParserFactory;
 import com.squareup.picasso.Picasso;
 
@@ -33,7 +47,7 @@ public class ProfilePageFragment extends Fragment {
     private Uri photoUrl;
     public static final String TAG = "CONSOLE:";
     private int page;
-
+    private String api = "https://bb57afc5.ngrok.io";
     // newInstance constructor for creating fragment with arguments
     public static ProfilePageFragment newInstance(int page, String title) {
         ProfilePageFragment fragmentFirst = new ProfilePageFragment();
@@ -63,10 +77,9 @@ public class ProfilePageFragment extends Fragment {
             for (UserInfo profile : user.getProviderData()) {
                 // Id of the provider (ex: google.com)
                 providerId = profile.getProviderId();
-
                 // UID specific to the provider
                 uid = profile.getUid();
-                // Name, email address, and profile photo Url
+                // Name, email address, and profile photo Url from facebook.
                 name = profile.getDisplayName();
                 email = profile.getEmail();
                 photoUrl = profile.getPhotoUrl();
@@ -82,6 +95,8 @@ public class ProfilePageFragment extends Fragment {
         Picasso.get().load(photoUrl).into(profilePic);
         userName.setText(name);
 
+        /**Api to fetch the data for this specific user. Do note that since edit profile is not yet
+         * implemented, default Textview will be rendered. However, hardcoding data into the database will be pulled and displayed here*/
         AndroidNetworking.get("https://bb57afc5.ngrok.io/api/users?userId={userId}")
                 .addPathParameter("userId", uid)
                 .setTag(this)
@@ -97,12 +112,11 @@ public class ProfilePageFragment extends Fragment {
                     @Override
                     public void onError(ANError anError) {
                         // handle error
+                        Log.d("USER",anError.toString());
+                        Toast.makeText(getActivity(), anError.toString(), Toast.LENGTH_SHORT).show();
                     }
                 });
 
-
-
-        // Construct the data source
         ArrayList<Advert> arrayOfUsers = new ArrayList<Advert>();
         // Create the adapter to convert the array to views
         final AdapterAdvert adapter = new AdapterAdvert(getActivity(), arrayOfUsers);
@@ -110,8 +124,9 @@ public class ProfilePageFragment extends Fragment {
         ListView listView = (ListView) view.findViewById(R.id.adsCurrent);
         listView.setAdapter(adapter);
 
-
-        AndroidNetworking.get("https://bb57afc5.ngrok.io/api/ad?userId={userId}")
+        /**!! VOLATILE !!*/
+        /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
+        AndroidNetworking.get(api+"/api/ad?userId={userId}")
                 .addPathParameter("userId", uid)
                 .setTag(this)
                 .setPriority(Priority.LOW)
@@ -120,7 +135,8 @@ public class ProfilePageFragment extends Fragment {
                     @Override
                     public void onResponse(List<Advert> adverts) {
                         // do anything with response
-                        Toast.makeText(getActivity(),adverts.toString(),Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getActivity(),adverts.toString(),Toast.LENGTH_LONG).show();
+                        //TODO: Change this to recycler view
                         for (Advert ad : adverts) {
                             Advert mAd = new Advert(ad.getBookAuthor(),ad.getBookCondition(),ad.getBookName(),ad.getBookPicUrl(),ad.getBookPrice());
                             adapter.addAll(mAd);

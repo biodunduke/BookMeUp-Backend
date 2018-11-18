@@ -15,7 +15,7 @@ module.exports = {
                 dataRef.get().then(snapshot =>{
                     snapshot.forEach(book => {
                         booksData.push(book.data())
-                        console.log(book.data())
+                        //console.log(book.data())
                     })
                     res.send(booksData)
                 })

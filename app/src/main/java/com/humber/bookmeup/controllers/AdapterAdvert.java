@@ -1,4 +1,11 @@
-package com.humber.bookmeup;
+/**
+ * David Uche
+ * Abiodun Ojo
+ * Elias
+ *
+ * */
+
+package com.humber.bookmeup.controllers;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.humber.bookmeup.R;
+import com.humber.bookmeup.models.Advert;
 
 import java.util.ArrayList;
 

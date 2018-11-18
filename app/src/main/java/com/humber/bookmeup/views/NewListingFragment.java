@@ -1,6 +1,16 @@
-package com.humber.bookmeup;
+/**
+ * David Uche
+ * Abiodun Ojo
+ * Elias
+ *
+ * The purpose of this class is to give the user the ability to add a new listing(book) to
+ * the database. The data here is written to the backend
+ *
+ * */
 
-import android.app.Activity;
+
+package com.humber.bookmeup.views;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -11,24 +21,18 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.esafirm.imagepicker.features.ImagePicker;
-import com.esafirm.imagepicker.features.ReturnMode;
-import com.esafirm.imagepicker.model.Image;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -40,12 +44,12 @@ import com.google.firebase.auth.UserInfo;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.humber.bookmeup.R;
+import com.humber.bookmeup.models.Book;
 
 import org.json.JSONArray;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.util.List;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -54,13 +58,21 @@ public class NewListingFragment extends Fragment {
     private String title;
     private String name,email,uid,providerId = "";
     private int page;
+
+    /**!! VOLATILE !!*/
+    /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
     public String api = "http://bb57afc5.ngrok.io";
+
     ImagePicker imagePicker;
+    /**Download Uri to store the uri for the image when it finishes uploading to cloud storage*/
     Uri downloadUri;
+    /**Store uri as string for database write*/
     String downloadUriStr = "";
+
+    /**Define storage for backend*/
     FirebaseStorage storage = FirebaseStorage.getInstance();
 
-    // newInstance constructor for creating fragment with arguments
+
     public static NewListingFragment newInstance(int page, String title) {
         NewListingFragment fragmentFirst = new NewListingFragment();
         Bundle args = new Bundle();
@@ -78,16 +90,19 @@ public class NewListingFragment extends Fragment {
         title = getArguments().getString("someTitle");
     }
 
+    /** Get uri for image selected and replace the default image with it*/
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(resultCode == RESULT_OK) {
             if(requestCode == 1000){
+                //get uri
                 Uri returnUri = data.getData();
                 try {
                     ImageView image = getView().findViewById(R.id.imageView3);
+                    //obtain image from gallery
                     Bitmap bitmapImage = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), returnUri);
+                    //set as new image in the imageview
                     image.setImageBitmap(bitmapImage);
-
                 }catch (Exception e){
                     System.out.print(e);
                 }
@@ -115,6 +130,7 @@ public class NewListingFragment extends Fragment {
         Button submitBtn = view.findViewById(R.id.submitBtn);
         ImageView image = view.findViewById(R.id.imageView3);
 
+        /**We need to know which user is uploading new information*/
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             for (UserInfo profile : user.getProviderData()) {
@@ -123,7 +139,6 @@ public class NewListingFragment extends Fragment {
             }
         }
 
-        //TODO: ADD COMMENTS
         imageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -143,7 +158,8 @@ public class NewListingFragment extends Fragment {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //validateFields(){}
+                //TODO: validateFields(){}
+                //TODO: reset edit text on submit
                 // Create a storage reference from our app
                 StorageReference storageRef = storage.getReference();
                 StorageReference mountainsRef = storageRef.child(bookISBN.getText().toString());
@@ -159,6 +175,7 @@ public class NewListingFragment extends Fragment {
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
                 byte[] data = baos.toByteArray();
 
+                //upload the image to cloud storage
                 UploadTask uploadTask = mountainsRef.putBytes(data);
                 uploadTask.addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -170,15 +187,15 @@ public class NewListingFragment extends Fragment {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                       Toast.makeText(getActivity(),taskSnapshot.toString(),Toast.LENGTH_LONG).show();
+                      /**Obtain the download uri to store in the backend so that we can view the images later on.*/
                         Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                             @Override
                             public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
                                 if (!task.isSuccessful()) {
                                     throw task.getException();
                                 }
-                                Toast.makeText(getActivity(),storageRef.child(bookISBN.getText().toString()).getDownloadUrl().toString(),Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getActivity(),storageRef.child(bookISBN.getText().toString()).getDownloadUrl().toString(),Toast.LENGTH_LONG).show();
                                 return storageRef.child(bookISBN.getText().toString()).getDownloadUrl();
-
                             }
                         }).addOnCompleteListener(new OnCompleteListener<Uri>() {
                             @Override
@@ -186,7 +203,7 @@ public class NewListingFragment extends Fragment {
                                 if (task.isSuccessful()) {
                                     downloadUri = task.getResult();
                                     downloadUriStr=downloadUri.toString();
-                                    Toast.makeText(getActivity(),"download UI:"+downloadUri.toString(),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getActivity(),"Upload successful",Toast.LENGTH_LONG).show();
                                     Book book = new Book();
                                     book.bookName = bookName.getText().toString();
                                     book.bookAuthor = bookAuthor.getText().toString();
@@ -202,17 +219,17 @@ public class NewListingFragment extends Fragment {
                                             .getAsJSONArray(new JSONArrayRequestListener() {
                                                 @Override
                                                 public void onResponse(JSONArray response) {
-                                                    // do anything with response
                                                     //  Toast.makeText(getActivity(),response.toString(),Toast.LENGTH_LONG).show();
                                                 }
                                                 @Override
                                                 public void onError(ANError error) {
                                                     // handle error
-                                                    // Toast.makeText(getActivity(),error.toString(),Toast.LENGTH_LONG).show();
                                                 }
                                             });
 
-                                } else {}
+                                } else {
+                                    //TODO: Add else logic
+                                }
                             }
                         });
                     }
@@ -225,9 +242,7 @@ public class NewListingFragment extends Fragment {
         return view;
     }
 
-
-
-
+    /** Open the andoid gallery to select an image*/
     private void startGallery() {
         Intent cameraIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         cameraIntent.setType("image/*");

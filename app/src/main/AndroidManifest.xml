@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".views.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,10 +41,10 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewListing" />
-        <activity android:name=".ProfilePage" />
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".views.NewListing" />
+        <activity android:name=".views.ProfilePage" />
+        <activity android:name=".views.MainActivity"/>
+        <activity android:name=".views.LoginActivity"></activity>
     </application>
 
 </manifest>

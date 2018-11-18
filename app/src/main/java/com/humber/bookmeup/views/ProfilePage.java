@@ -1,11 +1,20 @@
-package com.humber.bookmeup;
+/**
+ * David Uche
+ * Abiodun Ojo
+ * Elias
+ *
+ * This class is no longer valid in favour of ProfilePageFragment.
+ * Please delete/ignore
+ *
+ * */
 
-import android.media.Image;
+
+package com.humber.bookmeup.views;
+
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RatingBar;
@@ -15,23 +24,19 @@ import android.widget.Toast;
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.JSONArrayRequestListener;
-import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.androidnetworking.interfaces.ParsedRequestListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
+import com.humber.bookmeup.R;
+import com.humber.bookmeup.controllers.AdapterAdvert;
+import com.humber.bookmeup.models.Advert;
+import com.humber.bookmeup.models.User;
 import com.jacksonandroidnetworking.JacksonParserFactory;
 import com.squareup.picasso.Picasso;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
-
-import okhttp3.OkHttpClient;
 
 public class ProfilePage extends AppCompatActivity  {
     private String name,email,uid,providerId = "";
@@ -86,8 +91,6 @@ public class ProfilePage extends AppCompatActivity  {
                         // handle error
                     }
                 });
-
-
 
         // Construct the data source
         ArrayList<Advert> arrayOfUsers = new ArrayList<Advert>();
