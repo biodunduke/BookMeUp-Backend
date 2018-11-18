@@ -1,9 +1,0 @@
-node_modules/
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-      /.idea/libraries
-      /build
-      /captures
-      /.idea
