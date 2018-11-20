@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BookMeUp</string>
+    <string name="facebook_app_id">295044424680683</string>
+    <string name="fb_login_protocol_scheme">fb295044424680683</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Login Page Strings -->
+    <string name="version">Version 0.01</string>
+    <string name="logo_description">BookMeUp Logo</string>
+
+    <!-- item_book Strings -->
+    <string name="book_name">BOOK NAME</string>
+    <string name="price">PRICE</string>
+    <string name="author">AUTHOR</string>
+    <string name="book_image">BOOK IMAGE</string>
+
+
+
+</resources>
+
+
