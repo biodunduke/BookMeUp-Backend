@@ -213,7 +213,15 @@ public class NewListingFragment extends Fragment {
                                     book.bookCondition = bookCondition.getText().toString();
                                     book.userId = uid;
                                     book.bookPrice = Integer.valueOf(bookP.getText().toString());
+
+                                    //Clearing the text fields
+                                    bookName.setText("");
+                                    bookAuthor.setText("");
+                                    bookCondition.setText("");
+                                    bookP.setText("");
+                                    bookISBN.setText("");
                                     book.bookPicUrl = downloadUriStr;
+
                                     /**Convert book to Json and add it to the database. We also
                                      * store a reference to the storage bucket here for fetching in the listings
                                      * and profile page view*/
