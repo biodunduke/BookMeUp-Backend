@@ -24,6 +24,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.error.ANError;
@@ -50,7 +51,7 @@ public class AllAdsFragment extends Fragment {
 
     /**!! VOLATILE !!*/
     /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
-    public String api = "https://57bf80c9.ngrok.io";
+    public String api = "https://2b95fb4a.ngrok.io";
 
 
     public static AllAdsFragment newInstance(int page, String title) {
@@ -91,6 +92,7 @@ public class AllAdsFragment extends Fragment {
                         for (Book b : books) {
                             /**Add each book returned in the payload to our dataset by populating our book model*/
                             myDataset.add(new Book(b.getBookName(), b.getBookAuthor(),b.getBookPicUrl(),b.getBookPrice()));
+                            Toast.makeText(getActivity(), "Loading...", Toast.LENGTH_SHORT).show();
                             Log.d("BOOK","BOOKS FETCHED");
                         }
                     }

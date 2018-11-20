@@ -47,7 +47,7 @@ public class ProfilePageFragment extends Fragment {
     private Uri photoUrl;
     public static final String TAG = "CONSOLE:";
     private int page;
-    private String api = "https://57bf80c9.ngrok.io";
+    private String api = "https://2b95fb4a.ngrok.io";
     // newInstance constructor for creating fragment with arguments
     public static ProfilePageFragment newInstance(int page, String title) {
         ProfilePageFragment fragmentFirst = new ProfilePageFragment();
@@ -118,7 +118,7 @@ public class ProfilePageFragment extends Fragment {
                     public void onError(ANError anError) {
                         // handle error
                         Log.d("USER",anError.toString());
-                        Toast.makeText(getActivity(), anError.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Network is currently down. Please start it up or check tunneled url", Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -149,7 +149,7 @@ public class ProfilePageFragment extends Fragment {
                     @Override
                     public void onError(ANError anError) {
                         // handle error
-                        Toast.makeText(getActivity(),anError.toString(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "Network is currently down. Please start it up or check tunneled url", Toast.LENGTH_SHORT).show();
                         Log.d(TAG,anError.toString());
                     }
                 });

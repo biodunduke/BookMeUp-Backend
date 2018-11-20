@@ -110,7 +110,7 @@ public class ProfilePage extends AppCompatActivity  {
                     @Override
                     public void onResponse(List<Advert> adverts) {
                         // do anything with response
-                        Toast.makeText(ProfilePage.this,adverts.toString(),Toast.LENGTH_LONG).show();
+                      //  Toast.makeText(ProfilePage.this,adverts.toString(),Toast.LENGTH_LONG).show();
                         for (Advert ad : adverts) {
                             Advert mAd = new Advert(ad.getBookAuthor(),ad.getBookCondition(),ad.getBookName(),ad.getBookPicUrl(),ad.getBookPrice());
                             adapter.addAll(mAd);
@@ -119,7 +119,7 @@ public class ProfilePage extends AppCompatActivity  {
                     @Override
                     public void onError(ANError anError) {
                         // handle error
-                        Toast.makeText(ProfilePage.this,anError.toString(),Toast.LENGTH_LONG).show();
+                        //Toast.makeText(ProfilePage.this,anError.toString(),Toast.LENGTH_LONG).show();
                         Log.d(TAG,anError.toString());
                     }
                 });

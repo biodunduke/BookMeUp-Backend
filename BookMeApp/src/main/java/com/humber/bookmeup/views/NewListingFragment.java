@@ -22,6 +22,8 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -61,7 +63,7 @@ public class NewListingFragment extends Fragment {
 
     /**!! VOLATILE !!*/
     /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
-    public String api = "https://57bf80c9.ngrok.io";
+    public String api = "https://2b95fb4a.ngrok.io";
 
     ImagePicker imagePicker;
     /**Download Uri to store the uri for the image when it finishes uploading to cloud storage*/
@@ -88,6 +90,13 @@ public class NewListingFragment extends Fragment {
         super.onCreate(savedInstanceState);
         page = getArguments().getInt("someInt", 0);
         title = getArguments().getString("someTitle");
+
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
     /** Get uri for image selected and replace the default image with it*/
@@ -120,6 +129,7 @@ public class NewListingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
         View view = inflater.inflate(R.layout.fragment_new_listing, container, false);
         EditText bookName = view.findViewById(R.id.addBookName);
         EditText bookAuthor = view.findViewById(R.id.addBookAuthor);
@@ -159,8 +169,8 @@ public class NewListingFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //TODO: validateFields(){}
-                //TODO: reset edit text on submit
                 // Create a storage reference from our app
+                Toast.makeText(getActivity(),"Adding...",Toast.LENGTH_LONG).show();
                 StorageReference storageRef = storage.getReference();
                 StorageReference picsRef = storageRef.child(bookISBN.getText().toString());
                 StorageReference bookPicImageRef = storageRef.child("images/users/"+uid+"/"+bookISBN.getText().toString());
