@@ -1,4 +1,4 @@
-Official repository for the BookMEUp project.
+Official repository for the BookMeUp project.
 
 Notes:
 
