@@ -15,32 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eea4b428-fb92-4865-a311-64d23363086d" name="Default" comment="Cleaned up some items. &#10;Made">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BookMeUp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/AboutFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/AboutFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/AllAdsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/AllAdsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/NewListingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/NewListingFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/ProfilePageFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/ProfilePageFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/res/layout/fragment_new_listing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/res/layout/fragment_new_listing.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/res/layout/fragment_profile_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/res/layout/fragment_profile_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/res/layout/item_book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/res/layout/item_book.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeApp/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeApp/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMeUp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BookMeUp.iml" afterDir="false" />
-    </list>
+    <list default="true" id="eea4b428-fb92-4865-a311-64d23363086d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,111 +36,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ProfilePageFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/ProfilePageFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="166" selection-start-line="166" selection-end-line="166" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2007#2008#0" expanded="true" />
-                <element signature="e#2057#2058#0" expanded="true" />
-                <element signature="e#5094#5100#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllAdsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/AllAdsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/models/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Advert.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/models/Advert.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_all_ads.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/res/layout/fragment_all_ads.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdapterAdvert.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/controllers/AdapterAdvert.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="38" column="62" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_advert.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/res/layout/item_advert.xml">
-          <provider editor-type-id="text-editor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_book.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/res/layout/item_book.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdapterBooks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/controllers/AdapterBooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="54" column="84" selection-start-line="54" selection-start-column="84" selection-end-line="54" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -2275,7 +2146,7 @@
     <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -2284,50 +2155,7 @@
           <expand>
             <path>
               <item name="BookMeUp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="BookMeApp" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="BookMeUp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="BookMeApp" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="BookMeUp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="BookMeApp" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bookmeup" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BookMeUp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="BookMeApp" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bookmeup" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BookMeUp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="BookMeApp" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bookmeup" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BookMeUp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="BookMeApp" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bookmeup" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BookMeUp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="BookMeApp" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="BookMeUp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="BookMeApp" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -2341,6 +2169,17 @@
             <path>
               <item name="BookMeUp" type="b2602c69:ProjectViewProjectNode" />
               <item name="BookMeUp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="BookMeUp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookMeUp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BookMeApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BookMeUp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookMeUp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="BookMeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2507,6 +2346,14 @@
       <option name="presentableId" value="Default" />
       <updated>1543100524501</updated>
     </task>
+    <task id="LOCAL-00001" summary="David and I&#10;Cleaned up some items. &#10;Changed the Linear layout on Profile and All ADS Page to GridLayout">
+      <created>1543108764883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543108764883</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2520,11 +2367,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="5" />
       <window_info id="Build Variants" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" visible="true" weight="0.32930845" />
       <window_info anchor="bottom" id="Logcat" order="0" weight="0.32930845" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
@@ -2538,7 +2384,7 @@
       <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Preview" order="0" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info id="Captures" order="2" weight="0.25" />
@@ -2557,6 +2403,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="David and I&#10;Cleaned up some items. &#10;Changed the Linear layout on Profile and All ADS Page to GridLayout" />
+    <option name="LAST_COMMIT_MESSAGE" value="David and I&#10;Cleaned up some items. &#10;Changed the Linear layout on Profile and All ADS Page to GridLayout" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/LoginActivity.java">
@@ -2723,8 +2573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BookMeApp/src/main/java/com/humber/bookmeup/views/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+        <state relative-caret-position="214">
+          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
         </state>
       </provider>
     </entry>

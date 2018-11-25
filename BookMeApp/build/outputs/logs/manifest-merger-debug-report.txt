@@ -1,0 +1,705 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\6408409b67afcdd6bc19258d615eed51\AndroidManifest.xml:2:1-9:12
+MERGED from [com.amitshekhar.android:jackson-android-networking:1.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\jackson-android-networking-1.0.2.aar\f5e107d38ab2ee96f9e206dc8bccf7dc\AndroidManifest.xml:20:1-29:12
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\android-networking-1.0.2.aar\cfe74fea00291f18f558c36028f25b36\AndroidManifest.xml:18:1-27:12
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:17:1-42:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:2:1-14:12
+MERGED from [com.facebook.android:facebook-login:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-login-4.38.1.aar\063e402cd101f72819733a0313dd3042\AndroidManifest.xml:21:1-31:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b71a30091bd6652c0a213380c2af3742\AndroidManifest.xml:17:1-24:12
+MERGED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:2:1-34:12
+MERGED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:2:1-19:12
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:2:1-32:12
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:21:1-37:12
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.6.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.6.0.aar\a28965c9b6c630cd2ebf9e367adc1fe0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\5cba8f7db53c373a59d7cdd319391f02\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\03a5174b29e9f620d56d6b87723058fd\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\9af3634edd0366492f96358d6d7bbd33\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\a84ab332abe4353680a411f2709ca430\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\039463eeff4deb4d1118beb33b080fd0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\05affaee1a801f274d1abf4e4b1c9dbb\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:17:1-65:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\ad186ebdc681c991f28a881dac008bb6\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-16.0.0.aar\730ca45d1e22a40a7d3b30f247743ead\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-15.0.1.aar\31cf76b65ca22503228fefee44070b0d\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\c929d425df645d8fbd9122ec03aca990\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.4.aar\484ce2a4b70c1f43c5d60837d022c01e\AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5404600a8b6d9d1d45c54bed51720b3e\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\1c870b0c52ba8a72f86c44fa67648e9d\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\fb9db184d2702ab39b1099d0055d4d7d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\2402180e4d540d175ca152f97c40d621\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:21:1-53:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e18990fbd389d85dfb0d0af1c37ef025\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\d3e20f951d3ff82856226f54eb80ce28\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c8da48f1108e7aad1af30e0183f78ae7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\be521150ab63d3cd2fe5ed8aaded2a73\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\4ed4bbff961542b24f5c2e5302ee185e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.2.aar\d3f99df2a2741b151668dc3e08a9fcd8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\2dc1c1876fa21f123c19238949f11371\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\cfd92c7cbfc9992017b24d309a6385e6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\126142ef02a07023e24c3eaf49924a09\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\484fa7f9c6c9ae6774970d1d3911c4da\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\c922718f3f0f5387955dc587e4728d8a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\23d7030c2e6e773751300dbb5f2b7210\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\765d6361c7c0009a753a8c0a6a121ffb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\674c3422dda77fbd2703c3fd868739e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\4d4cc280310d67210ab5029c93195bbc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\3d7dde3a1d8eedd4f720c511bbce488e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e7e4a280fb65515506981a9d7446a05a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\2d23695343a80249c467dfd4c92adf10\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\4648264b944ea05ebebacaf051118099\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4aeea50570c25165201c15d27bd4a611\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\47c3e088ed971e889d834e4130d99588\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\d03593ed2b1b962e96c3f487ee91f9df\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d887240731ce41e46670ed5667bce781\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\65ec2114b1b970efd8a751c8b61740a2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\802a97775052a7dd51767c2224f78846\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bc62cd3aa34bb9b79dc974f641d439c5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3f91a655dcb8d13be3ca4321f364f27b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\86411c05c521b4bb0531d0d84c8ca6ac\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\678fd5c1340789217a5be6e7b496b11f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\aabc4c376792ce3747881b975fe54c4c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.1.aar\8052262aad4f419295c87d74d1eec08e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\bc89bef9fe142cb71c8f66c8701649ef\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+	package
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.4.aar\484ce2a4b70c1f43c5d60837d022c01e\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.4.aar\484ce2a4b70c1f43c5d60837d022c01e\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:6:5-81
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:12:5-81
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:7:5-80
+MERGED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:12:5-80
+MERGED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:12:5-80
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:11:5-80
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:7:22-77
+application
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:9:5-48:19
+MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\6408409b67afcdd6bc19258d615eed51\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\6408409b67afcdd6bc19258d615eed51\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:23:5-40:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:7:5-12:19
+MERGED from [com.facebook.android:facebook-login:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-login-4.38.1.aar\063e402cd101f72819733a0313dd3042\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-login-4.38.1.aar\063e402cd101f72819733a0313dd3042\AndroidManifest.xml:28:5-29:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b71a30091bd6652c0a213380c2af3742\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b71a30091bd6652c0a213380c2af3742\AndroidManifest.xml:22:5-20
+MERGED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:14:5-32:19
+MERGED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:14:5-32:19
+MERGED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:11:5-17:19
+MERGED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:11:5-17:19
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:15:5-30:19
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:15:5-30:19
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:28:5-35:19
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\03a5174b29e9f620d56d6b87723058fd\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\03a5174b29e9f620d56d6b87723058fd\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\9af3634edd0366492f96358d6d7bbd33\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\9af3634edd0366492f96358d6d7bbd33\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\05affaee1a801f274d1abf4e4b1c9dbb\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\05affaee1a801f274d1abf4e4b1c9dbb\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\ad186ebdc681c991f28a881dac008bb6\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\ad186ebdc681c991f28a881dac008bb6\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-16.0.0.aar\730ca45d1e22a40a7d3b30f247743ead\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-16.0.0.aar\730ca45d1e22a40a7d3b30f247743ead\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-15.0.1.aar\31cf76b65ca22503228fefee44070b0d\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-15.0.1.aar\31cf76b65ca22503228fefee44070b0d\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\c929d425df645d8fbd9122ec03aca990\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\c929d425df645d8fbd9122ec03aca990\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5404600a8b6d9d1d45c54bed51720b3e\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5404600a8b6d9d1d45c54bed51720b3e\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\1c870b0c52ba8a72f86c44fa67648e9d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\1c870b0c52ba8a72f86c44fa67648e9d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\2402180e4d540d175ca152f97c40d621\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\2402180e4d540d175ca152f97c40d621\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:28:5-51:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\4ed4bbff961542b24f5c2e5302ee185e\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\4ed4bbff961542b24f5c2e5302ee185e\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4aeea50570c25165201c15d27bd4a611\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4aeea50570c25165201c15d27bd4a611\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\47c3e088ed971e889d834e4130d99588\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\47c3e088ed971e889d834e4130d99588\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\bc89bef9fe142cb71c8f66c8701649ef\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\bc89bef9fe142cb71c8f66c8701649ef\AndroidManifest.xml:22:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4aeea50570c25165201c15d27bd4a611\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:15:9-65
+activity#com.humber.bookmeup.views.SplashActivity
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:16:19-55
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:20:27-74
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:24:9-26:55
+	android:value
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:26:13-52
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:25:13-58
+activity#com.facebook.FacebookActivity
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:28:9-31:48
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:31:13-45
+	android:configChanges
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:30:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:29:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:32:9-43:20
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:34:9-67
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:34:9-67
+	android:exported
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:34:13-36
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:33:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:35:13-42:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:39:27-75
+data
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:41:17-75
+	android:scheme
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:41:23-72
+activity#com.humber.bookmeup.views.NewListing
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:44:9-54
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:44:19-51
+activity#com.humber.bookmeup.views.ProfilePage
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:45:9-55
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:45:19-52
+activity#com.humber.bookmeup.views.MainActivity
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:46:9-55
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:46:19-53
+activity#com.humber.bookmeup.views.LoginActivity
+ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:47:9-56
+	android:name
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml:47:19-54
+uses-sdk
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\6408409b67afcdd6bc19258d615eed51\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\6408409b67afcdd6bc19258d615eed51\AndroidManifest.xml:5:5-44
+MERGED from [com.amitshekhar.android:jackson-android-networking:1.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\jackson-android-networking-1.0.2.aar\f5e107d38ab2ee96f9e206dc8bccf7dc\AndroidManifest.xml:25:5-27:41
+MERGED from [com.amitshekhar.android:jackson-android-networking:1.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\jackson-android-networking-1.0.2.aar\f5e107d38ab2ee96f9e206dc8bccf7dc\AndroidManifest.xml:25:5-27:41
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\android-networking-1.0.2.aar\cfe74fea00291f18f558c36028f25b36\AndroidManifest.xml:23:5-25:41
+MERGED from [com.amitshekhar.android:android-networking:1.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\android-networking-1.0.2.aar\cfe74fea00291f18f558c36028f25b36\AndroidManifest.xml:23:5-25:41
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:21:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.android:facebook-login:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-login-4.38.1.aar\063e402cd101f72819733a0313dd3042\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-login-4.38.1.aar\063e402cd101f72819733a0313dd3042\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:design:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b71a30091bd6652c0a213380c2af3742\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\b71a30091bd6652c0a213380c2af3742\AndroidManifest.xml:20:5-44
+MERGED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:24:5-26:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.6.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.6.0.aar\a28965c9b6c630cd2ebf9e367adc1fe0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.6.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.6.0.aar\a28965c9b6c630cd2ebf9e367adc1fe0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\5cba8f7db53c373a59d7cdd319391f02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\5cba8f7db53c373a59d7cdd319391f02\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\03a5174b29e9f620d56d6b87723058fd\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\03a5174b29e9f620d56d6b87723058fd\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\9af3634edd0366492f96358d6d7bbd33\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\9af3634edd0366492f96358d6d7bbd33\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\a84ab332abe4353680a411f2709ca430\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\a84ab332abe4353680a411f2709ca430\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\039463eeff4deb4d1118beb33b080fd0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\039463eeff4deb4d1118beb33b080fd0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\05affaee1a801f274d1abf4e4b1c9dbb\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\05affaee1a801f274d1abf4e4b1c9dbb\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\ad186ebdc681c991f28a881dac008bb6\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-stats-15.0.1.aar\ad186ebdc681c991f28a881dac008bb6\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-16.0.0.aar\730ca45d1e22a40a7d3b30f247743ead\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-16.0.0.aar\730ca45d1e22a40a7d3b30f247743ead\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-15.0.1.aar\31cf76b65ca22503228fefee44070b0d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-15.0.1.aar\31cf76b65ca22503228fefee44070b0d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\c929d425df645d8fbd9122ec03aca990\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.0.aar\c929d425df645d8fbd9122ec03aca990\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.4.aar\484ce2a4b70c1f43c5d60837d022c01e\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.4.aar\484ce2a4b70c1f43c5d60837d022c01e\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5404600a8b6d9d1d45c54bed51720b3e\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5404600a8b6d9d1d45c54bed51720b3e\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\1c870b0c52ba8a72f86c44fa67648e9d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\1c870b0c52ba8a72f86c44fa67648e9d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\fb9db184d2702ab39b1099d0055d4d7d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\fb9db184d2702ab39b1099d0055d4d7d\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\2402180e4d540d175ca152f97c40d621\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\2402180e4d540d175ca152f97c40d621\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e18990fbd389d85dfb0d0af1c37ef025\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e18990fbd389d85dfb0d0af1c37ef025\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\d3e20f951d3ff82856226f54eb80ce28\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\d3e20f951d3ff82856226f54eb80ce28\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c8da48f1108e7aad1af30e0183f78ae7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c8da48f1108e7aad1af30e0183f78ae7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\be521150ab63d3cd2fe5ed8aaded2a73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\be521150ab63d3cd2fe5ed8aaded2a73\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\4ed4bbff961542b24f5c2e5302ee185e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\4ed4bbff961542b24f5c2e5302ee185e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.2.aar\d3f99df2a2741b151668dc3e08a9fcd8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\customtabs-27.0.2.aar\d3f99df2a2741b151668dc3e08a9fcd8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\2dc1c1876fa21f123c19238949f11371\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\2dc1c1876fa21f123c19238949f11371\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\cfd92c7cbfc9992017b24d309a6385e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\cfd92c7cbfc9992017b24d309a6385e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\126142ef02a07023e24c3eaf49924a09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\126142ef02a07023e24c3eaf49924a09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\484fa7f9c6c9ae6774970d1d3911c4da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\484fa7f9c6c9ae6774970d1d3911c4da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\c922718f3f0f5387955dc587e4728d8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\c922718f3f0f5387955dc587e4728d8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\23d7030c2e6e773751300dbb5f2b7210\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\23d7030c2e6e773751300dbb5f2b7210\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\765d6361c7c0009a753a8c0a6a121ffb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\765d6361c7c0009a753a8c0a6a121ffb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\674c3422dda77fbd2703c3fd868739e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\674c3422dda77fbd2703c3fd868739e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\4d4cc280310d67210ab5029c93195bbc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\4d4cc280310d67210ab5029c93195bbc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\3d7dde3a1d8eedd4f720c511bbce488e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\3d7dde3a1d8eedd4f720c511bbce488e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e7e4a280fb65515506981a9d7446a05a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e7e4a280fb65515506981a9d7446a05a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\2d23695343a80249c467dfd4c92adf10\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\2d23695343a80249c467dfd4c92adf10\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\4648264b944ea05ebebacaf051118099\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\4648264b944ea05ebebacaf051118099\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4aeea50570c25165201c15d27bd4a611\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4aeea50570c25165201c15d27bd4a611\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\47c3e088ed971e889d834e4130d99588\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\47c3e088ed971e889d834e4130d99588\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\d03593ed2b1b962e96c3f487ee91f9df\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\d03593ed2b1b962e96c3f487ee91f9df\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d887240731ce41e46670ed5667bce781\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d887240731ce41e46670ed5667bce781\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\65ec2114b1b970efd8a751c8b61740a2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\65ec2114b1b970efd8a751c8b61740a2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\802a97775052a7dd51767c2224f78846\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\802a97775052a7dd51767c2224f78846\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bc62cd3aa34bb9b79dc974f641d439c5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bc62cd3aa34bb9b79dc974f641d439c5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3f91a655dcb8d13be3ca4321f364f27b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3f91a655dcb8d13be3ca4321f364f27b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\86411c05c521b4bb0531d0d84c8ca6ac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\86411c05c521b4bb0531d0d84c8ca6ac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\678fd5c1340789217a5be6e7b496b11f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\678fd5c1340789217a5be6e7b496b11f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\aabc4c376792ce3747881b975fe54c4c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\aabc4c376792ce3747881b975fe54c4c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.1.aar\8052262aad4f419295c87d74d1eec08e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.1.aar\8052262aad4f419295c87d74d1eec08e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\bc89bef9fe142cb71c8f66c8701649ef\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.0.aar\bc89bef9fe142cb71c8f66c8701649ef\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Biodun\Desktop\BookMeUp\BookMeApp\src\main\AndroidManifest.xml
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:25:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:35:9-39:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:35:9-39:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:34:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.5.aar\d239ec9ef48d1136ece62cd6bdd46fb1\AndroidManifest.xml:37:17-109
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\a9fc8fce933c5faef92cbcd14cee779d\AndroidManifest.xml:9:13-64
+uses-permission#android.permission.CAMERA
+ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:11:5-65
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:13:5-65
+MERGED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:11:22-62
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:18:9-21:47
+	android:screenOrientation
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:20:13-49
+	android:theme
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:21:13-44
+	android:name
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:19:13-76
+provider#com.myhexaville.smartimagepicker.CustomFileProvider
+ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:23:9-31:20
+	android:grantUriPermissions
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:27:13-47
+	android:authorities
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:25:13-79
+	android:exported
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:24:13-79
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:28:13-30:54
+	android:resource
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:30:17-51
+	android:name
+		ADDED from [com.myhexaville:smart-image-picker:1.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\smart-image-picker-1.0.4.aar\882023f36b0a9d9106f0ee72fddef0c5\AndroidManifest.xml:29:17-67
+activity#com.esafirm.rximagepicker.ShadowActivity
+ADDED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:12:9-16:75
+	android:launchMode
+		ADDED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:15:13-43
+	android:configChanges
+		ADDED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:14:13-122
+	android:theme
+		ADDED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:16:13-72
+	android:name
+		ADDED from [com.github.esafirm.android-image-picker:rximagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\rximagepicker-1.13.1.aar\327f5e7c233282ff4f8a02ec2988eb74\AndroidManifest.xml:13:13-68
+activity#com.esafirm.imagepicker.features.ImagePickerActivity
+ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:16:9-19:50
+	android:configChanges
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:18:13-59
+	android:theme
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:19:13-47
+	android:name
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:17:13-80
+provider#com.esafirm.imagepicker.helper.ImagePickerFileProvider
+ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:21:9-29:20
+	android:grantUriPermissions
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:25:13-47
+	android:authorities
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:23:13-72
+	android:exported
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [com.github.esafirm.android-image-picker:imagepicker:1.13.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\imagepicker-1.13.1.aar\55cdddef5ade5d645e9acccb95af8aab\AndroidManifest.xml:22:13-82
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-common-4.38.1.aar\ffa4a95e48c8cc431ff4db7de4d31951\AndroidManifest.xml:33:19-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.4.aar\484ce2a4b70c1f43c5d60837d022c01e\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.4] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.4.aar\484ce2a4b70c1f43c5d60837d022c01e\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:24:22-65
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-16.0.1.aar\923fb0055bad6ed360b73fbee85d480c\AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.1.1.aar\9eb0ef9a45fe021fba5a3cfff2e0a5fd\AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.1.aar\77304a6d5edec4d3d9c8ef4aee12908e\AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:26:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:29:9-63
+permission#com.humber.bookmeup.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:29:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:32:22-76
+uses-permission#com.humber.bookmeup.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:32:22-76
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:37:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:41:9-50:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:43:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:44:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:42:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:45:13-49:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.humber.bookmeup
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:45:13-49:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:46:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:46:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:48:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:48:27-58
+category#com.humber.bookmeup
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:48:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:48:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:56:9-62:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:57:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:59:13-61:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:59:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:60:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-iid-16.0.0.aar\e04d85aa66318b30bf2ca7e20d40ebdf\AndroidManifest.xml:60:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f02b3353d2b485a1ded07f6cdd184632\AndroidManifest.xml:11:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\0a655deba9f9ad689b8fd4e3a3c719e7\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\1c870b0c52ba8a72f86c44fa67648e9d\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\1c870b0c52ba8a72f86c44fa67648e9d\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\1c870b0c52ba8a72f86c44fa67648e9d\AndroidManifest.xml:24:13-58
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.38.1] C:\Users\Biodun\.gradle\caches\transforms-1\files-1.1\facebook-core-4.38.1.aar\8d92b9c0072f6691f34a160e3964953d\AndroidManifest.xml:48:25-92
