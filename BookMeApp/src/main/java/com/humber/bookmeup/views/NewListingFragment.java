@@ -61,12 +61,13 @@ public class NewListingFragment extends Fragment {
 
     /**!! VOLATILE !!*/
     /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
-    public String api = "https://57bf80c9.ngrok.io";
+    public String api = "http://booktemp.herokuapp.com";
 
     ImagePicker imagePicker;
     /**Download Uri to store the uri for the image when it finishes uploading to cloud storage*/
     Uri downloadUri;
-    /**Store uri as string for database write*/
+    /**Store uri as string for database wri
+     * te*/
     String downloadUriStr = "";
 
     /**Define storage for backend*/
@@ -76,8 +77,6 @@ public class NewListingFragment extends Fragment {
     public static NewListingFragment newInstance(int page, String title) {
         NewListingFragment fragmentFirst = new NewListingFragment();
         Bundle args = new Bundle();
-        args.putInt("someInt", page);
-        args.putString("someTitle", title);
         fragmentFirst.setArguments(args);
         return fragmentFirst;
     }
@@ -86,8 +85,6 @@ public class NewListingFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        page = getArguments().getInt("someInt", 0);
-        title = getArguments().getString("someTitle");
     }
 
     /** Get uri for image selected and replace the default image with it*/
@@ -132,6 +129,7 @@ public class NewListingFragment extends Fragment {
 
         /**We need to know which user is uploading new information*/
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        //TODO:Do validations here
         if (user != null) {
             for (UserInfo profile : user.getProviderData()) {
                 uid = profile.getUid();

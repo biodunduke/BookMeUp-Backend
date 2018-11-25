@@ -2,23 +2,21 @@
  * David Uche
  * Abiodun Ojo
  * Elias
- *
- *
+ * <p>
+ * <p>
  * The purpose of this Activity is to display all listings of books.
  * It does so by getting a reference to all ads created by users and
  * returning a json payload containing the data. This data is then
  * added to the corresponing model(the book object in this case) and rendered to an adapter
- *
- * */
+ */
 
 
 package com.humber.bookmeup.views;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -46,18 +44,16 @@ public class AllAdsFragment extends Fragment {
     private RecyclerView.LayoutManager mLayoutManager;
 
     /**Data to load into the adapter. This is fetched from the api */
-    private List<Book> myDataset=new ArrayList<>();
+    private List<Book> myDataset = new ArrayList<>();
 
     /**!! VOLATILE !!*/
     /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
-    public String api = "https://57bf80c9.ngrok.io";
+    public String api = "https://booktemp.herokuapp.com";
 
 
     public static AllAdsFragment newInstance(int page, String title) {
         AllAdsFragment fragmentFirst = new AllAdsFragment();
         Bundle args = new Bundle();
-        args.putInt("someInt", page);
-        args.putString("someTitle", title);
         fragmentFirst.setArguments(args);
         return fragmentFirst;
     }
@@ -66,13 +62,11 @@ public class AllAdsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        page = getArguments().getInt("someInt", 2);
-        title = getArguments().getString("someTitle");
 
     }
 
     @Override
-    public void onAttach(Context context){
+    public void onAttach(Context context) {
         super.onAttach(context);
         /**Api call to get all ads from firebase. For docs, check out https://github.com/amitshekhariitbhu/Fast-Android-Networking */
         /**Sample data returned:
@@ -83,20 +77,21 @@ public class AllAdsFragment extends Fragment {
          * -8581-4d206c7fdd9a"}]
          * */
 
-        AndroidNetworking.get(api+"/api/ads")
+        AndroidNetworking.get(api + "/api/ads")
                 .build()
                 .getAsObjectList(Book.class, new ParsedRequestListener<List<Book>>() {
                     @Override
                     public void onResponse(List<Book> books) {
                         for (Book b : books) {
                             /**Add each book returned in the payload to our dataset by populating our book model*/
-                            myDataset.add(new Book(b.getBookName(), b.getBookAuthor(),b.getBookPicUrl(),b.getBookPrice()));
-                            Log.d("BOOK","BOOKS FETCHED");
+                            myDataset.add(new Book(b.getBookName(), b.getBookAuthor(), b.getBookPicUrl(), b.getBookPrice()));
+                            Log.d("BOOK", "BOOKS FETCHED");
                         }
                     }
+
                     @Override
                     public void onError(ANError anError) {
-                        Log.d("BOOK",anError.toString());
+                        Log.d("BOOK", anError.toString());
                     }
                 });
 
@@ -113,7 +108,7 @@ public class AllAdsFragment extends Fragment {
         mRecyclerView.setHasFixedSize(true);
 
         /**Use linear layout. could use gridlayout as well */
-        mLayoutManager = new LinearLayoutManager(getActivity());
+        mLayoutManager = new GridLayoutManager(getActivity(), 2);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
 

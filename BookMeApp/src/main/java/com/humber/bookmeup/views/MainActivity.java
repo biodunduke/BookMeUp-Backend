@@ -2,24 +2,23 @@
  * David Uche
  * Abiodun Ojo
  * Elias
- *
- *
+ * <p>
+ * <p>
  * The purpose of this Activity is to hold the fragments all together.
  * It does this by implementing a fragmentpageradapter that loads each fragment
  * into a specific tab on the activity. To implement a tablayout, we use
  * a viewpager
- *
- * */
+ */
 
 
 package com.humber.bookmeup.views;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.humber.bookmeup.R;
 
@@ -35,9 +34,10 @@ public class MainActivity extends AppCompatActivity {
         vpPager.setAdapter(adapterViewPager);
     }
 
-    public static class MyPagerAdapter extends FragmentPagerAdapter {
-        private static int NUM_ITEMS = 4;
-        private static String pageTitle;
+    public class MyPagerAdapter extends FragmentPagerAdapter {
+        private int NUM_ITEMS = 4; //Number of Fragment pages
+        //Increase if you need to add more pages
+        private String pageTitle;
 
         public MyPagerAdapter(FragmentManager fragmentManager) {
             super(fragmentManager);
@@ -54,13 +54,14 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0: // Fragment # 0 - This will show FirstFragment
-                    return NewListingFragment.newInstance(0, "New Ad");
+                    return NewListingFragment.newInstance(0, getString(R.string.stringHolder));
                 case 1: //
-                    return ProfilePageFragment.newInstance(1, "New Ad");
+                    return ProfilePageFragment.newInstance(1, getString(R.string.stringHolder));
                 case 2: //
-                    return AllAdsFragment.newInstance(2, "New Ad");
+                    return AllAdsFragment.newInstance(2, getString(R.string.stringHolder));
                 case 3: //
-                    return AboutFragment.newInstance(3, "About");
+                    return AboutFragment.newInstance(3, getString(R.string.stringHolder));
+                //Add more pages here, also do same inside getPageTitle
                 default:
                     return null;
             }
@@ -70,22 +71,22 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public CharSequence getPageTitle(int position) {
 
-            switch(position){
+            switch (position) {
                 case 0:
-                    pageTitle = "New Listing";
+                    pageTitle = getString(R.string.newListing);
                     break;
                 case 1:
-                    pageTitle = "Profile Page";
+                    pageTitle = getString(R.string.profilePage);
                     break;
                 case 2:
-                    pageTitle = "All Ads";
+                    pageTitle = getString(R.string.allAds);
                     break;
                 case 3:
-                    pageTitle = "About Page";
+                    pageTitle = getString(R.string.aboutPage);
                     break;
-                    default:
-                        pageTitle="Title";
-                        break;
+                default:
+                    pageTitle = getString(R.string.stringHolder);
+                    break;
             }
             return pageTitle;
         }

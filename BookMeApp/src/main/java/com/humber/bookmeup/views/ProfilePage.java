@@ -52,7 +52,7 @@ public class ProfilePage extends AppCompatActivity  {
         if (user != null) {
             for (UserInfo profile : user.getProviderData()) {
                 // Id of the provider (ex: google.com)
-                providerId = profile.getProviderId();
+                providerId = profile.getProviderId();  //Not necessary
 
                 // UID specific to the provider
                 uid = profile.getUid();
@@ -64,6 +64,7 @@ public class ProfilePage extends AppCompatActivity  {
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_page);
+
         TextView userName = findViewById(R.id.userName);
         final TextView country = findViewById(R.id.country);
         final TextView city = findViewById(R.id.city);
