@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BookMeUp</string>
+    <string name="facebook_app_id">295044424680683</string>
+    <string name="fb_login_protocol_scheme">fb295044424680683</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stringHolder">Page Title</string>
+    <string name="profilePage">Profile Page</string>
+    <string name="allAds">All Ads</string>
+    <string name="newListing">New Listing</string>
+    <string name="aboutPage">About Page</string>
+
+</resources>
+
+

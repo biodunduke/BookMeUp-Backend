@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BookMeApp/BookMeApp.iml" filepath="$PROJECT_DIR$/BookMeApp/BookMeApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BookMeUp.iml" filepath="$PROJECT_DIR$/BookMeUp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookInProgress/BookInProgress.iml" filepath="$PROJECT_DIR$/BookInProgress/BookInProgress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookMeUp-Backend.iml" filepath="$PROJECT_DIR$/BookMeUp-Backend.iml" />
     </modules>
   </component>
 </project>
