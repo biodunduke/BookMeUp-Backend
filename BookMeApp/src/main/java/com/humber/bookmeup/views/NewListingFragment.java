@@ -58,9 +58,6 @@ public class NewListingFragment extends Fragment {
     private String title;
     private String name,email,uid,providerId = "";
     private int page;
-
-    /**!! VOLATILE !!*/
-    /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
     public String api = "http://booktemp.herokuapp.com";
 
     ImagePicker imagePicker;
@@ -129,7 +126,6 @@ public class NewListingFragment extends Fragment {
 
         /**We need to know which user is uploading new information*/
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        //TODO:Do validations here
         if (user != null) {
             for (UserInfo profile : user.getProviderData()) {
                 uid = profile.getUid();
@@ -156,8 +152,6 @@ public class NewListingFragment extends Fragment {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO: validateFields(){}
-                //TODO: reset edit text on submit
                 // Create a storage reference from our app
                 StorageReference storageRef = storage.getReference();
                 StorageReference picsRef = storageRef.child(bookISBN.getText().toString());
@@ -257,6 +251,4 @@ public class NewListingFragment extends Fragment {
             startActivityForResult(cameraIntent, 1000);
         }
     }
-
-
 }

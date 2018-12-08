@@ -12,7 +12,7 @@
         android:id="@+id/mbookAuthorBookImage"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="BOOK IMAGE"
+        android:text=""
         />
 
     <ImageView
@@ -21,12 +21,6 @@
         android:layout_height="120dp"
         app:srcCompat="@drawable/com_facebook_button_like_icon_selected" />
 
-    <TextView
-        android:id="@+id/mbookAuthorTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="AUTHOR"
-        />
 
     <TextView
         android:id="@+id/mbookAuthor"

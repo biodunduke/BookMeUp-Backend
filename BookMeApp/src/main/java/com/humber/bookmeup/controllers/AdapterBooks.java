@@ -56,11 +56,9 @@ public class AdapterBooks extends
         // Get the data model based on position
         Book book = mDataset.get(position);
         TextView textView = viewHolder.nameTextView;
-        TextView textView1 = viewHolder.authorTextView;
         TextView textView3 = viewHolder.priceTextView;
         ImageView imageView = viewHolder.downloadUrlTextView;
         textView.setText(book.getBookName());
-        textView1.setText(book.getBookAuthor());
         textView3.setText(String.valueOf(book.getBookPrice()));
         /** Set the imageview to the image url of the reference to the storage bucket*/
         Picasso.get().load(book.getBookPicUrl()).into(imageView);
@@ -86,7 +84,6 @@ public class AdapterBooks extends
         public TextView nameTextView;
         public ImageView downloadUrlTextView;
         public TextView priceTextView;
-        public TextView authorTextView;
 
 
         public ViewHolder(View itemView) {
@@ -94,7 +91,6 @@ public class AdapterBooks extends
             nameTextView = itemView.findViewById(R.id.mbookName);
             downloadUrlTextView = itemView.findViewById(R.id.mbookPicUrl);
             priceTextView = itemView.findViewById(R.id.mbookPrice);
-            authorTextView = itemView.findViewById(R.id.mbookAuthor);
         }
     }
 }

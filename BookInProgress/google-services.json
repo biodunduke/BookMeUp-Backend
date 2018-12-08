@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "702792827001",
+    "firebase_url": "https://bookmeup-d232a.firebaseio.com",
+    "project_id": "bookmeup-d232a",
+    "storage_bucket": "bookmeup-d232a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702792827001:android:ad02afeffa47131e",
+        "android_client_info": {
+          "package_name": "com.humber.bookmeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702792827001-ashhsbtg2ckc33ilbh1blk7bhie43mca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg0EBkDVabBWn1Nqp-jN2ACv37KOjUYAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

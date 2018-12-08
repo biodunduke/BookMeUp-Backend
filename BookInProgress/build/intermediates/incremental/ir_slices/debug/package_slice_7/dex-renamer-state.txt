@@ -1,0 +1,4 @@
+#Sat Dec 08 11:02:59 EST 2018
+base.0=C\:\\Users\\David\\Desktop\\FINALSOFTWAREPROJECT\\BookMeUp-Backend\\BookInProgress\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex

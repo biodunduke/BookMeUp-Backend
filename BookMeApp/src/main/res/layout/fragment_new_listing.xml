@@ -1,107 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.NewListingFragment"
-    tools:layout_editor_absoluteY="25dp">
+    tools:context=".views.NewListingFragment">
 
 
     <EditText
         android:id="@+id/addBookName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_width="127dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="45dp"
         android:ems="10"
         android:hint="Book Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/addBookAuthor"
-        android:layout_width="wrap_content"
+        android:layout_width="128dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="7dp"
+        android:layout_alignStart="@+id/addBookName"
+        android:layout_below="@+id/addISBN"
         android:ems="10"
         android:hint="Author"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addISBN" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/addISBN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/addBookName"
+        android:layout_marginTop="139dp"
         android:ems="10"
         android:hint="ISBN"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addBookName" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/addCondition"
-        android:layout_width="wrap_content"
+        android:layout_width="127dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:layout_marginEnd="8dp"
+        android:layout_alignStart="@+id/addBookName"
+        android:layout_below="@+id/addBookAuthor"
         android:ems="10"
         android:hint="Condition"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/addPrice"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/addPrice"
-        android:layout_width="wrap_content"
+        android:layout_width="127dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="8dp"
+        android:layout_above="@+id/addISBN"
+        android:layout_alignStart="@+id/addBookName"
+        android:layout_marginBottom="-139dp"
         android:ems="10"
         android:hint="Price"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:inputType="number" />
 
     <Button
         android:id="@+id/submitBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="89dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="SUBMIT"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addImage" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="44dp"
+        android:text="SUBMIT" />
 
     <Button
         android:id="@+id/addImage"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="ADD IMAGE"
-        app:layout_constraintBottom_toTopOf="@+id/submitBtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginTop="159dp"
+        android:text="ADD IMAGE" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/bookmeup"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addBookAuthor"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submitBtn" />
+        android:layout_height="116dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/bookmeup" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

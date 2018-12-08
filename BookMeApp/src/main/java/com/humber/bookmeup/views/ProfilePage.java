@@ -42,6 +42,7 @@ public class ProfilePage extends AppCompatActivity  {
     private String name,email,uid,providerId = "";
     private Uri photoUrl;
     public static final String TAG = "CONSOLE:";
+    public String api = "http://booktemp.herokuapp.com";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Adding an Network Interceptor for Debugging purpose :
@@ -75,7 +76,7 @@ public class ProfilePage extends AppCompatActivity  {
         Picasso.get().load(photoUrl).into(profilePic);
         userName.setText(name);
 
-        AndroidNetworking.get("https://bb57afc5.ngrok.io/api/users?userId={userId}")
+        AndroidNetworking.get(api+"/api/users?userId={userId}")
                 .addPathParameter("userId", uid)
                 .setTag(this)
                 .build()
@@ -102,7 +103,7 @@ public class ProfilePage extends AppCompatActivity  {
         listView.setAdapter(adapter);
 
 
-        AndroidNetworking.get("https://bb57afc5.ngrok.io/api/ads?userId={userId}")
+        AndroidNetworking.get(api+"/api/ads?userId={userId}")
                 .addPathParameter("userId", uid)
                 .setTag(this)
                 .setPriority(Priority.LOW)
