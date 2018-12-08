@@ -10,6 +10,9 @@
     <string name="allAds">All Ads</string>
     <string name="newListing">New Listing</string>
     <string name="aboutPage">About Page</string>
+    <string name="version">1.0</string>
+    <string name="logo_description">App Logo</string>
+    <string name="test_login_button">Login as Guest</string>
 
 </resources>
 
