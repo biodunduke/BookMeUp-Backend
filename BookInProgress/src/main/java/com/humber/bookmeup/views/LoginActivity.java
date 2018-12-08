@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mCallbackManager = CallbackManager.Factory.create();
         LoginButton loginButton = findViewById(R.id.login_button);
-        loginButton.setReadPermissions("email", "public_profile");
+        loginButton.setReadPermissions(getString(R.string.email), getString(R.string.publicProfile));
         mAuth = FirebaseAuth.getInstance();
         Button testLogin= (Button)findViewById(R.id.testBtn);
         mTestAuth = FirebaseAuth.getInstance();
@@ -110,7 +110,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(LoginActivity.this, "Authentication failed.",
+                            Toast.makeText(LoginActivity.this, getString(R.string.authFailed),
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -134,8 +134,8 @@ public class LoginActivity extends AppCompatActivity {
                             }
                         } else {
                             // If sign in fails, display a message to the user.
-                            Log.w("", "signInWithCredential:failure", task.getException());
-                            Toast.makeText(LoginActivity.this, "Authentication failed.",
+                            Log.w("", getString(R.string.signWithCredFailure), task.getException());
+                            Toast.makeText(LoginActivity.this, getString(R.string.authFailed),
                                     Toast.LENGTH_SHORT).show();
                         }
                     }

@@ -162,7 +162,8 @@ public class NewListingFragment extends Fragment {
                 // Create a storage reference from our app
                 StorageReference storageRef = storage.getReference();
                 StorageReference picsRef = storageRef.child(bookISBN.getText().toString());
-                StorageReference bookPicImageRef = storageRef.child("images/users/"+uid+"/"+bookISBN.getText().toString());
+                StorageReference bookPicImageRef = storageRef.child(getString(R.string.pathImages)+
+                        "/"+getString(R.string.pathUsers)+"/"+uid+"/"+bookISBN.getText().toString());
                 // While the file names are the same, the references point to different files
                 picsRef.getName().equals(bookPicImageRef.getName());    // true
                 picsRef.getPath().equals(bookPicImageRef.getPath());    // false
@@ -202,7 +203,7 @@ public class NewListingFragment extends Fragment {
                                 if (task.isSuccessful()) {
                                     downloadUri = task.getResult();
                                     downloadUriStr=downloadUri.toString();
-                                    Toast.makeText(getActivity(),"Upload successful",Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getActivity(),getString(R.string.uploadSuccess),Toast.LENGTH_LONG).show();
                                     /**Create new book instance to send to the api*/
                                     Book book = new Book();
                                     book.bookName = bookName.getText().toString();
@@ -253,7 +254,7 @@ public class NewListingFragment extends Fragment {
     /** Open the andoid gallery to select an image*/
     private void startGallery() {
         Intent cameraIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        cameraIntent.setType("image/*");
+        cameraIntent.setType(getString(R.string.image)+"/*");
         if (cameraIntent.resolveActivity(getActivity().getPackageManager()) != null) {
             startActivityForResult(cameraIntent, 1000);
         }

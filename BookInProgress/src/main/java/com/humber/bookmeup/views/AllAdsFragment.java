@@ -85,13 +85,13 @@ public class AllAdsFragment extends Fragment {
                         for (Book b : books) {
                             /**Add each book returned in the payload to our dataset by populating our book model*/
                             myDataset.add(new Book(b.getBookName(), b.getBookAuthor(), b.getBookPicUrl(), b.getBookPrice()));
-                            Log.d("BOOK", "BOOKS FETCHED");
+                            Log.d(getString(R.string.book), getString(R.string.booksFetched));
                         }
                     }
 
                     @Override
                     public void onError(ANError anError) {
-                        Log.d("BOOK", anError.toString());
+                        Log.d(getString(R.string.book), anError.toString());
                     }
                 });
 
