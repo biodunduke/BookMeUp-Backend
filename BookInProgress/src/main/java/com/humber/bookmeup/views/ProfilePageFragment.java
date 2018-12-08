@@ -13,12 +13,13 @@ package com.humber.bookmeup.views;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,8 +32,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserInfo;
 import com.humber.bookmeup.R;
-import com.humber.bookmeup.controllers.AdapterAdvert;
-import com.humber.bookmeup.models.Advert;
+import com.humber.bookmeup.controllers.AdapterBooks;
+import com.humber.bookmeup.models.Book;
 import com.humber.bookmeup.models.User;
 import com.jacksonandroidnetworking.JacksonParserFactory;
 import com.squareup.picasso.Picasso;
@@ -43,17 +44,20 @@ import java.util.List;
 public class ProfilePageFragment extends Fragment {
     // Store instance variables
     private String title;
-    private String name,email,uid,providerId = "";
+    private String name, email, uid, providerId = "";
     private Uri photoUrl;
     public static final String TAG = "CONSOLE:";
     private int page;
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private List<Book> myDataset = new ArrayList<>();
     private String api = "https://booktemp.herokuapp.com";
+
     // newInstance constructor for creating fragment with arguments
     public static ProfilePageFragment newInstance(int page, String title) {
         ProfilePageFragment fragmentFirst = new ProfilePageFragment();
         Bundle args = new Bundle();
-        args.putInt("someInt", page);
-        args.putString("someTitle", title);
         fragmentFirst.setArguments(args);
         return fragmentFirst;
     }
@@ -62,8 +66,6 @@ public class ProfilePageFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        page = getArguments().getInt("someInt", 1);
-        title = getArguments().getString("someTitle");
     }
 
     // Inflate the view for the fragment based on layout XML
@@ -83,8 +85,6 @@ public class ProfilePageFragment extends Fragment {
                 name = profile.getDisplayName();
                 email = profile.getEmail();
                 photoUrl = profile.getPhotoUrl();
-                /**NOTE: WITH ANONYMOUS USER, Profile picture and name data are null as it was not
-                 * created onLogin*/
             }
         }
         TextView userName = view.findViewById(R.id.userName);
@@ -114,47 +114,64 @@ public class ProfilePageFragment extends Fragment {
                         country.setText(user.getCountry());
                         city.setText(user.getCity());
                         address.setText(user.getAddress());
+                        //TODO: edit the rating bar
                         rating.setRating(user.getRating());
                     }
+
                     @Override
                     public void onError(ANError anError) {
                         // handle error
-                        Log.d("USER",anError.toString());
-                        Toast.makeText(getActivity(), "Network is currently down. Please start it up or check tunneled url", Toast.LENGTH_SHORT).show();
+                        Log.d("USER", anError.toString());
+                        Toast.makeText(getActivity(), anError.toString(), Toast.LENGTH_SHORT).show();
                     }
                 });
 
-        ArrayList<Advert> arrayOfUsers = new ArrayList<Advert>();
+        ArrayList<Book> arrayOfUsers = new ArrayList<Book>();
         // Create the adapter to convert the array to views
-        final AdapterAdvert adapter = new AdapterAdvert(getActivity(), arrayOfUsers);
-        // Attach the adapter to a ListView
-        ListView listView = (ListView) view.findViewById(R.id.adsCurrent);
-        listView.setAdapter(adapter);
+        final AdapterBooks adapter = new AdapterBooks(arrayOfUsers);
+        //        // Attach the adapter to a ListView
+
 
         /**!! VOLATILE !!*/
         /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
-        AndroidNetworking.get(api+"/api/ad?userId={userId}")
+        AndroidNetworking.get(api + "/api/ad?userId={userId}")
                 .addPathParameter("userId", uid)
                 .setTag(this)
                 .setPriority(Priority.LOW)
                 .build()
-                .getAsObjectList(Advert.class, new ParsedRequestListener<List<Advert>>() {
+                .getAsObjectList(Book.class, new ParsedRequestListener<List<Book>>() {
                     @Override
-                    public void onResponse(List<Advert> adverts) {
+                    public void onResponse(List<Book> adverts) {
                         // do anything with response
                         //Toast.makeText(getActivity(),adverts.toString(),Toast.LENGTH_LONG).show();
-                        for (Advert ad : adverts) {
-                            Advert mAd = new Advert(ad.getBookAuthor(),ad.getBookCondition(),ad.getBookName(),ad.getBookPicUrl(),ad.getBookPrice());
-                            adapter.addAll(mAd);
+                        for (Book ad : adverts) {
+                            myDataset.add(new Book(ad.getBookName(), ad.getBookAuthor(), ad.getBookPicUrl(), ad.getBookPrice()));
                         }
                     }
+
                     @Override
                     public void onError(ANError anError) {
                         // handle error
-                        Toast.makeText(getActivity(), "Network is currently down. Please start it up or check tunneled url", Toast.LENGTH_SHORT).show();
-                        Log.d(TAG,anError.toString());
+                        Toast.makeText(getActivity(), anError.toString(), Toast.LENGTH_LONG).show();
+                        Log.d(TAG, anError.toString());
                     }
                 });
+
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.adsCurrent);
+
+        /** Prevent layout from changing size*/
+        mRecyclerView.setHasFixedSize(true);
+
+        /**Use linear layout. could use gridlayout as well */
+        mLayoutManager = new GridLayoutManager(getActivity(), 2);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+
+        /**Load our adapter with the fetched data */
+        mAdapter = new AdapterBooks(myDataset);
+
+        /**Set our adapter*/
+        mRecyclerView.setAdapter(mAdapter);
         return view;
     }
 }
