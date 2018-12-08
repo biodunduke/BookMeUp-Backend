@@ -8,4 +8,4 @@
 /captures
 .externalNativeBuild
 node_modules/
-\.idea/
+/.idea/
