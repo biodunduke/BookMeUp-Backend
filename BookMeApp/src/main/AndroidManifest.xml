@@ -44,7 +44,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".views.NewListing" />
-        <activity android:name=".views.ProfilePage" />
         <activity android:name=".views.MainActivity"/>
         <activity android:name=".views.LoginActivity"/>
     </application>
