@@ -131,9 +131,6 @@ public class ProfilePageFragment extends Fragment {
         final AdapterBooks adapter = new AdapterBooks(arrayOfUsers);
         //        // Attach the adapter to a ListView
 
-
-        /**!! VOLATILE !!*/
-        /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
         AndroidNetworking.get(api + "/api/ad?userId={userId}")
                 .addPathParameter("userId", uid)
                 .setTag(this)
