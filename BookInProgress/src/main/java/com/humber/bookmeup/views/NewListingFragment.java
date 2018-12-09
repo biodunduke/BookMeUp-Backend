@@ -112,7 +112,12 @@ public class NewListingFragment extends Fragment {
             }
         }
         Uri returnUri;
-        returnUri = data.getData();
+        try {
+
+            returnUri = data.getData();
+        }catch(Exception e) {
+            Toast.makeText(getContext(),getString(R.string.invalid),Toast.LENGTH_SHORT).show();
+        }
     }
 
 
