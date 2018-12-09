@@ -20,6 +20,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.humber.bookmeup.R;
 
@@ -34,6 +38,27 @@ public class MainActivity extends AppCompatActivity {
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
         vpPager.setAdapter(adapterViewPager);
     }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.about:
+                Toast.makeText(MainActivity.this,"BookMeApp",Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.help:
+                Toast.makeText(MainActivity.this,"BookMeApp Help",Toast.LENGTH_LONG).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
 
     public class MyPagerAdapter extends FragmentPagerAdapter {
         private int NUM_ITEMS = 4; //Number of Fragment pages

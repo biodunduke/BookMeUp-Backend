@@ -35,6 +35,8 @@
     <string name="city">City</string>
     <string name="address">Address</string>
     <string name="edit_profile">Edit profile</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
 </resources>
 
 
