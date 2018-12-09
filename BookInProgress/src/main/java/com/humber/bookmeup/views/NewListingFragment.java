@@ -62,28 +62,23 @@ public class NewListingFragment extends Fragment {
     StorageReference storageRef, picsRef, bookPicImageRef;
     UploadTask uploadTask;
 
-    /**!! VOLATILE !!*/
-    /**
-     * NGROK  tunnel to localhost. Change this url when needed since we are running on a free version
-     */
     public String api = "http://booktemp.herokuapp.com";
 
     ImagePicker imagePicker;
-    /**
-     * Download Uri to store the uri for the image when it finishes uploading to cloud storage
-     */
+    // Download Uri to store the uri for the image when it finishes uploading to cloud storage
+
     Uri downloadUri;
-    /**
-     * Store uri as string for database wri
-     * te
-     */
+    //Store uri as string for database write
+
     String downloadUriStr = "";
 
-    /**
-     * Define storage for backend
-     */
+    //Define storage for backend
+
     FirebaseStorage storage = FirebaseStorage.getInstance();
 
+    public NewListingFragment() {
+
+    }
 
     public static NewListingFragment newInstance(int page, String title) {
         NewListingFragment fragmentFirst = new NewListingFragment();
@@ -98,9 +93,7 @@ public class NewListingFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-    /**
-     * Get uri for image selected and replace the default image with it
-     */
+    //Get uri for image selected and replace the default image with it
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {
@@ -166,30 +159,35 @@ public class NewListingFragment extends Fragment {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String error ="";
+                String error = "";
                 // Create a storage reference from our app
                 try {
-                    if (!textLength(bookName.getText().toString())) {
-                        bookName.setError(getString(R.string.invalid));
-                        bookName.requestFocus();
-                        error=getString(R.string.invalid);
-                    }
-                    if (!textLength(bookAuthor.getText().toString())) {
-                        bookAuthor.setError(getString(R.string.invalid));
-                        bookAuthor.requestFocus();
-                        error=getString(R.string.invalid);
+                    if (!textLength(bookP.getText().toString())) {
+                        bookP.setError(getString(R.string.invalid));
+                        bookP.requestFocus();
+                        error = getString(R.string.invalid);
                     }
                     if (!textLength(bookCondition.getText().toString())) {
                         bookCondition.setError(getString(R.string.invalid));
                         bookCondition.requestFocus();
-                        error=getString(R.string.invalid);
+                        error = getString(R.string.invalid);
+                    }
+                    if (!textLength(bookAuthor.getText().toString())) {
+                        bookAuthor.setError(getString(R.string.invalid));
+                        bookAuthor.requestFocus();
+                        error = getString(R.string.invalid);
                     }
                     if (!textLength(bookISBN.getText().toString())) {
                         bookISBN.setError(getString(R.string.invalid));
                         bookISBN.requestFocus();
-                        error=getString(R.string.invalid);
+                        error = getString(R.string.invalid);
                     }
-                        if(!error.equals(R.string.invalid)){
+                    if (!textLength(bookName.getText().toString())) {
+                        bookName.setError(getString(R.string.invalid));
+                        bookName.requestFocus();
+                        error = getString(R.string.invalid);
+                    }
+                    if (!error.equals(R.string.invalid)) {
                         try {
                             storageRef = storage.getReference();
                             picsRef = storageRef.child(bookISBN.getText().toString());
@@ -310,7 +308,7 @@ public class NewListingFragment extends Fragment {
         }
     }
 
-    private boolean textLength(String text) {
+    public boolean textLength(String text) {
         if (text.isEmpty() || text.length() < 3)
             return false;
         else
