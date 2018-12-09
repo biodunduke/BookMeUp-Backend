@@ -2,8 +2,6 @@
     <string name="app_name">BookMeUp</string>
     <string name="facebook_app_id">295044424680683</string>
     <string name="fb_login_protocol_scheme">fb295044424680683</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="stringHolder">Page Title</string>
     <string name="profilePage">Profile Page</string>
@@ -19,7 +17,7 @@
     <string name="publicProfile">public_profile</string>
     <string name="authFailed">Authentication failed.</string>
     <string name="signWithCredFailure">signInWithCredential:failure</string>
-<string name="pathImages">images</string>
+    <string name="pathImages">images</string>
     <string name="pathUsers">users</string>
     <string name="uploadSuccess">Upload successful</string>
     <string name="image">image</string>
@@ -37,6 +35,8 @@
     <string name="edit_profile">Edit profile</string>
     <string name="help">Help</string>
     <string name="about">About</string>
+    <string name="noData">No data added yet</string>
+    <string name="noDataAnon">No preset data for Anonymous User</string>
 </resources>
 
 
