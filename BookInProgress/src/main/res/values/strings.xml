@@ -38,6 +38,7 @@
     <string name="noData">No data added yet</string>
     <string name="noDataAnon">No preset data for Anonymous User</string>
     <string name="book_image">Book\'s Image</string>
+    <string name="invalid">Invalid</string>
 </resources>
 
 
