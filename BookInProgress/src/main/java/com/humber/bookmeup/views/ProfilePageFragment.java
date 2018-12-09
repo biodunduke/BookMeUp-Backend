@@ -122,7 +122,7 @@ public class ProfilePageFragment extends Fragment {
                     public void onError(ANError anError) {
                         // handle error
                         Log.d("USER", anError.toString());
-                        Toast.makeText(getActivity(), "No preset data for Anonymous User", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), getString(R.string.noDataAnon), Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -149,7 +149,7 @@ public class ProfilePageFragment extends Fragment {
                     @Override
                     public void onError(ANError anError) {
                         // handle error
-                        Toast.makeText(getActivity(), "No data added yet", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), getString(R.string.noData), Toast.LENGTH_LONG).show();
                         Log.d(TAG, anError.toString());
                     }
                 });
