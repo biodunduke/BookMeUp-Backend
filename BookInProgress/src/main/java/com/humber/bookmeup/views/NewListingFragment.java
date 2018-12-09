@@ -22,6 +22,7 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,8 +61,6 @@ public class NewListingFragment extends Fragment {
     private String name,email,uid,providerId = "";
     private int page;
 
-    /**!! VOLATILE !!*/
-    /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
     public String api = "http://booktemp.herokuapp.com";
 
     ImagePicker imagePicker;
@@ -108,7 +107,11 @@ public class NewListingFragment extends Fragment {
             }
         }
         Uri returnUri;
-        returnUri = data.getData();
+        try {
+            returnUri = data.getData();
+        }catch(Exception e){
+            Toast.makeText(getContext(),"Error adding image",Toast.LENGTH_LONG).show();
+        }
 
 
     }

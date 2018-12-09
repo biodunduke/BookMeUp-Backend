@@ -77,14 +77,24 @@ public class ProfilePageFragment extends Fragment {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             for (UserInfo profile : user.getProviderData()) {
+                Log.d("AUTH_RPOVIDER",profile.getProviderId());
                 // Id of the provider (ex: google.com)
-                providerId = profile.getProviderId();
-                // UID specific to the provider
-                uid = profile.getUid();
-                // Name, email address, and profile photo Url from facebook.
-                name = profile.getDisplayName();
-                email = profile.getEmail();
-                photoUrl = profile.getPhotoUrl();
+                //handle anonymous users
+                if(profile.getProviderId() != "facebook"){
+                    name = "Anonymous User";
+                    email = "anonymousUser@gmail.com";
+                    photoUrl = Uri.parse("https://vignette.wikia.nocookie.net/spongebob/images/a/ac/Spongebobwithglasses.jpeg/revision/latest?cb=20121014113150");
+                    uid = "9";
+                }
+                else{
+                    providerId = profile.getProviderId();
+                    // UID specific to the provider
+                    uid = profile.getUid();
+                    // Name, email address, and profile photo Url from facebook.
+                    name = profile.getDisplayName();
+                    email = profile.getEmail();
+                    photoUrl = profile.getPhotoUrl();
+                }
             }
         }
         TextView userName = view.findViewById(R.id.userName);
@@ -114,15 +124,17 @@ public class ProfilePageFragment extends Fragment {
                         country.setText(user.getCountry());
                         city.setText(user.getCity());
                         address.setText(user.getAddress());
-                        //TODO: edit the rating bar
                         rating.setRating(user.getRating());
                     }
 
                     @Override
                     public void onError(ANError anError) {
-                        // handle error
-                        Log.d("USER", anError.toString());
-                        Toast.makeText(getActivity(), getString(R.string.noDataAnon), Toast.LENGTH_SHORT).show();
+                        //Load fake data for anonymous users
+                        country.setText(R.string.default_country);
+                        city.setText(R.string.Toronto);
+                        address.setText(R.string.Address);
+                        rating.setRating(4);
+                        //Log.d("USER", anError.toString());
                     }
                 });
 
@@ -131,9 +143,6 @@ public class ProfilePageFragment extends Fragment {
         final AdapterBooks adapter = new AdapterBooks(arrayOfUsers);
         //        // Attach the adapter to a ListView
 
-
-        /**!! VOLATILE !!*/
-        /**NGROK  tunnel to localhost. Change this url when needed since we are running on a free version */
         AndroidNetworking.get(api + "/api/ad?userId={userId}")
                 .addPathParameter("userId", uid)
                 .setTag(this)
@@ -152,7 +161,6 @@ public class ProfilePageFragment extends Fragment {
                     @Override
                     public void onError(ANError anError) {
                         // handle error
-                        Toast.makeText(getActivity(), getString(R.string.noData), Toast.LENGTH_LONG).show();
                         Log.d(TAG, anError.toString());
                     }
                 });

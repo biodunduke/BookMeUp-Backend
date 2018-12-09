@@ -37,6 +37,10 @@
     <string name="about">About</string>
     <string name="noData">No data added yet</string>
     <string name="noDataAnon">No preset data for Anonymous User</string>
+    <string name="Address">Etobicoke</string>
+    <string name="Toronto">Toronto</string>
+    <string name="default_country">Canada</string>
+    <string name="settings">Settings</string>
     <string name="book_image">Book\'s Image</string>
 </resources>
 
