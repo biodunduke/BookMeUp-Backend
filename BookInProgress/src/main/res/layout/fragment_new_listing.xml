@@ -91,12 +91,12 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
+        android:layout_width="158dp"
+        android:layout_height="172dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:src="@drawable/bookmeup"
+        android:src="@drawable/ic_post_addpic"
         app:layout_constraintEnd_toStartOf="@+id/addBookName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
