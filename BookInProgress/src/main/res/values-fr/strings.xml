@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">BookMeUp</string>
-    <string name="facebook_app_id">295044424680683</string>
-    <string name="fb_login_protocol_scheme">fb295044424680683</string>
     <string name="hello_blank_fragment">Bonjour fragment vierge</string>
     <string name="stringHolder">Titre de la page</string>
     <string name="profilePage">Profile Page</string>
