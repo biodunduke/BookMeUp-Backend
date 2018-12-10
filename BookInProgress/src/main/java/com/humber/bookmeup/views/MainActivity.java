@@ -14,6 +14,7 @@
 
 package com.humber.bookmeup.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -42,10 +43,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.about:
-                Toast.makeText(MainActivity.this,"BookMeApp",Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.help:
                 Toast.makeText(MainActivity.this,"BookMeApp Help",Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.settings_pg:
+                Intent takeme = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(takeme);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

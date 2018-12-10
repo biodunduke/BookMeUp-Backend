@@ -31,8 +31,9 @@
     <string name="city">Ville</string>
     <string name="address">Adresse</string>
     <string name="edit_profile">Editer le profil</string>
-    <string name="help">Aidez-moi</string>
     <string name="about">Sur</string>
     <string name="noData">Aucune donnée ajoutée pour le moment</string>
     <string name="noDataAnon">Aucune donnée prédéfinie pour l\'utilisateur anonyme</string>
+    <string name="settings">Réglages</string>
+    <string name="logout_btn">êtes déconnecté</string>
 </resources>
