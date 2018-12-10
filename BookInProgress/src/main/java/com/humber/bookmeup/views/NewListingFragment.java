@@ -21,6 +21,7 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -116,7 +117,7 @@ public class NewListingFragment extends Fragment {
 
             returnUri = data.getData();
         }catch(Exception e) {
-            Toast.makeText(getContext(),getString(R.string.invalid),Toast.LENGTH_SHORT).show();
+            Log.e("New Listing Fragment", getString(R.string.invalid));
         }
     }
 

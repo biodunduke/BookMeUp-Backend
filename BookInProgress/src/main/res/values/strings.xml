@@ -45,6 +45,8 @@
     <string name="about_t7">If you enjoy using our app then please dont forget to give us a 5 star rating on google play</string>
     <string name="book_image">Book\'s Image</string>
     <string name="invalid">Invalid</string>
+    <string name="set_save">Save Settings</string>
+    <string name="set_sw1">Light Theme</string>
 </resources>
 
 

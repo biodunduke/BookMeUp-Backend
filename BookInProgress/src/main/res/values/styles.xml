@@ -16,4 +16,9 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="MyActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
 </resources>
