@@ -36,3 +36,5 @@ local.properties
 ehthumbs.db
 Thumbs.db
 \.idea/caches/
+
+\.idea/

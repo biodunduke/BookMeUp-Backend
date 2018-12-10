@@ -41,17 +41,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.about:
-                Toast.makeText(MainActivity.this,"BookMeApp Help",Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.settings_pg:
-                Intent takeme = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(takeme);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+        Intent takeme = new Intent(MainActivity.this, SettingsActivity.class);
+        startActivity(takeme);
+        return super.onOptionsItemSelected(item);
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -84,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
                 case 0: // Fragment # 0 - This will show FirstFragment
                     return NewListingFragment.newInstance(0, getString(R.string.stringHolder));
                 case 1: //
-                    return ProfilePageFragment.newInstance(1, getString(R.string.stringHolder));
+                    return AllAdsFragment.newInstance(1, getString(R.string.stringHolder));
                 case 2: //
-                    return AllAdsFragment.newInstance(2, getString(R.string.stringHolder));
+                    return ProfilePageFragment.newInstance(2, getString(R.string.stringHolder));
                 case 3: //
                     return AboutFragment.newInstance(3, getString(R.string.stringHolder));
                 //Add more pages here, also do same inside getPageTitle
@@ -104,10 +97,10 @@ public class MainActivity extends AppCompatActivity {
                     pageTitle = getString(R.string.newListing);
                     break;
                 case 1:
-                    pageTitle = getString(R.string.profilePage);
+                    pageTitle = getString(R.string.allAds);
                     break;
                 case 2:
-                    pageTitle = getString(R.string.allAds);
+                    pageTitle = getString(R.string.profilePage);
                     break;
                 case 3:
                     pageTitle = getString(R.string.aboutPage);

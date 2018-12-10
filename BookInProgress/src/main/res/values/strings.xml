@@ -38,6 +38,11 @@
     <string name="noData">No data added yet</string>
     <string name="noDataAnon">No preset data for Anonymous User</string>
     <string name="logout_btn">Log out</string>
+    <string name="about_t1">Created By Team</string>
+    <string name="about_t2">LastMinSub</string>
+    <string name="about_t3">Abidun\t\t\tDavid\t\t\tElias</string>
+    <string name="about_t5">BookMeUp\nIs an app designed for students to sell/buy used college or university books</string>
+    <string name="about_t7">If you enjoy using our app then please dont forget to give us a 5 star rating on google play</string>
 </resources>
 
 

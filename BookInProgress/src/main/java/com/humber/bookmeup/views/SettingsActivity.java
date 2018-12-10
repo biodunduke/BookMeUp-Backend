@@ -11,6 +11,8 @@ import com.facebook.login.Login;
 import com.google.firebase.auth.FirebaseAuth;
 import com.humber.bookmeup.R;
 
+import static java.lang.Boolean.TRUE;
+
 public class SettingsActivity extends AppCompatActivity {
     SharedPreferences pref;
 
@@ -20,6 +22,14 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         Button log_out = findViewById(R.id.out_btn);
+        getSupportActionBar().setTitle("Settings");
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(TRUE);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.ic_settings);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        pref = getSharedPreferences("SETTINGS", MODE_PRIVATE);
+
+
         log_out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
