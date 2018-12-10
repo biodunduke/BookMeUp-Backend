@@ -34,6 +34,8 @@
     <string name="about">Sur</string>
     <string name="noData">Aucune donnée ajoutée pour le moment</string>
     <string name="noDataAnon">Aucune donnée prédéfinie pour l\'utilisateur anonyme</string>
+    <string name="book_image">Image du livre</string>
+    <string name="invalid">Invalid</string>
     <string name="settings">Réglages</string>
     <string name="logout_btn">êtes déconnecté</string>
 </resources>
