@@ -153,6 +153,7 @@ public class LoginActivity extends AppCompatActivity {
                 .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        finishAffinity();
                         finish();
                     }
                 });

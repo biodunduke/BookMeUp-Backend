@@ -16,7 +16,6 @@ package com.humber.bookmeup.views;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBar;
@@ -32,8 +31,6 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
-
-import com.facebook.login.Login;
 import com.google.firebase.auth.FirebaseAuth;
 import com.humber.bookmeup.R;
 
