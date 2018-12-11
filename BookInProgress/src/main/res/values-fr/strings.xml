@@ -34,8 +34,19 @@
     <string name="about">Sur</string>
     <string name="noData">Aucune donnée ajoutée pour le moment</string>
     <string name="noDataAnon">Aucune donnée prédéfinie pour l\'utilisateur anonyme</string>
-    <string name="book_image">Image du livre</string>
-    <string name="invalid">Invalid</string>
     <string name="settings">Réglages</string>
     <string name="logout_btn">êtes déconnecté</string>
+    <string name="about_t1">CrÃ©Ã© par l\'Ã©quipe</string>
+    <string name="about_t2">LastMinSub</string>
+    <string name="about_t3" translatable="false">Abiodun\t\t\tDavid\t\t\tElias</string>
+    <string name="about_t5">BookMeUp \ nEst-ce qu\'une application conÃ§ue pour que les Ã©tudiants vendent / achÃ¨tent des livres de collÃ¨ge ou d'universitÃ© d'occasion</string>
+    <string name="about_t7">Si vous aimez utiliser notre application, n\'oubliez pas de nous donner une note de 5 Ã©toiles sur Google Play</string>
+    <string name="Address">Etobicoke</string>
+    <string name="Toronto">Toronto</string>
+    <string name="default_country">Canada</string>
+    <string name="book_image">Image du livre</string>
+    <string name="invalid">Invalid</string>
+    <string name="set_save">Enregistrer les paramÃ¨tres</string>
+    <string name="set_sw1">ThÃ¨me LumiÃ¨re</string>
+    <string name="anonUser">Utilisateur anonyme</string>
 </resources>
