@@ -33,14 +33,14 @@
     <string name="city">City</string>
     <string name="address">Address</string>
     <string name="edit_profile">Edit profile</string>
-    <string name="settings">Settings</string>
     <string name="about">About</string>
     <string name="noData">No data added yet</string>
     <string name="noDataAnon">No preset data for Anonymous User</string>
+    <string name="settings">Settings</string>
     <string name="logout_btn">Log out</string>
     <string name="about_t1">Created By Team</string>
     <string name="about_t2">LastMinSub</string>
-    <string name="about_t3" translatable="false">Abiodun\t\t\tDavid\t\t\tElias</string>
+    <string name="about_t3">Abiodun\t\t\tDavid\t\t\tElias</string>
     <string name="about_t5">BookMeUp\nIs an app designed for students to sell/buy used college or university books</string>
     <string name="about_t7">If you enjoy using our app then please dont forget to give us a 5 star rating on google play</string>
     <string name="Address">Etobicoke</string>
@@ -51,6 +51,11 @@
     <string name="set_save">Save Settings</string>
     <string name="set_sw1">Light Theme</string>
     <string name="anonUser">Anonymous User</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_msg">Are you sure you want to log out ?</string>
+    <string name="logout_yes">Yes</string>
+    <string name="login_title">Hope to see you next time</string>
+    <string name="logout_no">No</string>
 </resources>
 
 

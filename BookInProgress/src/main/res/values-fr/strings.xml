@@ -39,7 +39,7 @@
     <string name="about_t1">CrÃ©Ã© par l\'Ã©quipe</string>
     <string name="about_t2">LastMinSub</string>
     <string name="about_t3" translatable="false">Abiodun\t\t\tDavid\t\t\tElias</string>
-    <string name="about_t5">BookMeUp \ nEst-ce qu\'une application conÃ§ue pour que les Ã©tudiants vendent / achÃ¨tent des livres de collÃ¨ge ou d'universitÃ© d'occasion</string>
+    <string name="about_t5">BookMeUp \ nEst-ce qu\'une application conÃ§ue pour que les Ã©tudiants vendent / achÃ¨tent des livres de collÃ¨ge ou d\'universitÃ© d\'occasion</string>
     <string name="about_t7">Si vous aimez utiliser notre application, n\'oubliez pas de nous donner une note de 5 Ã©toiles sur Google Play</string>
     <string name="Address">Etobicoke</string>
     <string name="Toronto">Toronto</string>
@@ -49,4 +49,9 @@
     <string name="set_save">Enregistrer les paramÃ¨tres</string>
     <string name="set_sw1">ThÃ¨me LumiÃ¨re</string>
     <string name="anonUser">Utilisateur anonyme</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_msg">Are you sure you want to log out ?</string>
+    <string name="logout_yes">Yes</string>
+    <string name="login_title">Hope to see you next time</string>
+    <string name="logout_no">No</string>
 </resources>

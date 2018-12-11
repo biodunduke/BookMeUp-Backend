@@ -15,8 +15,10 @@
 
 package com.humber.bookmeup.views;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -141,5 +143,22 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
     }
+
+    @Override
+    public void onBackPressed(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+        builder.setTitle(R.string.login_title)
+                .setIcon(R.drawable.ic_happy)
+                .setCancelable(true)
+                .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+        builder.show();
+
+    }
+
 
 }

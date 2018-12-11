@@ -1,15 +1,32 @@
+/**
+ * Team LastMinSub:
+ * Abiodun Ojo
+ * David Uche
+ * Elias Sabbagh
+ *
+ * Settings Activity
+ * Purpose is to give the user the ability to change some settings and save
+ * them in the shared preference and retrieve those settings once the app is loaded
+ *
+ * */
+
+
 package com.humber.bookmeup.views;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -37,7 +54,6 @@ public class SettingsActivity extends AppCompatActivity {
         pref = this.getSharedPreferences("SETTINGS", MODE_PRIVATE);
         setContentView(R.layout.activity_settings);
         theme = findViewById(R.id.switch3);
-        Button log_out = findViewById(R.id.out_btn);
         Button saveP = findViewById(R.id.set_save_btn);
         bar = getSupportActionBar();
         bar.setTitle("Settings");
@@ -64,13 +80,6 @@ public class SettingsActivity extends AppCompatActivity {
 
 
 
-        log_out.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getmeOut();
-            }
-        });
-
         saveP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,9 +89,27 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void getmeOut(){
-        FirebaseAuth.getInstance().signOut();
-        Intent iwantout = new Intent(SettingsActivity.this, LoginActivity.class);
-        startActivity(iwantout);
+        AlertDialog.Builder builder = new AlertDialog.Builder(SettingsActivity.this);
+        builder.setTitle(getResources().getString(R.string.logout_title));
+        builder.setMessage(getString(R.string.logout_msg))
+                .setCancelable(true)
+                .setIcon(R.drawable.ic_logout_rounded)
+                .setPositiveButton(getString(R.string.logout_yes), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseAuth.getInstance().signOut();
+                        Intent iwantout = new Intent(SettingsActivity.this, LoginActivity.class);
+                        startActivity(iwantout);
+                        finish();
+                    }
+                })
+                .setNegativeButton(getString(R.string.logout_no), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        onResume();
+                    }
+                });
+        builder.show();
 
     }
 
@@ -108,5 +135,18 @@ public class SettingsActivity extends AppCompatActivity {
             Log.e("Not Found","No Saved Settings Yet");
         }
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.settings_menu, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        getmeOut();
+        return super.onOptionsItemSelected(item);
+
+    }
+
 
 }

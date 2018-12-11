@@ -95,7 +95,6 @@ public class ProfilePageFragment extends Fragment {
                     name = profile.getDisplayName();
                     email = profile.getEmail();
                     photoUrl = profile.getPhotoUrl();
-                //    photoUrl = Uri.parse("android.resource:com.humber.bookmeup/"+R.drawable.ic_menu_profile);
                 }
             }
         }
