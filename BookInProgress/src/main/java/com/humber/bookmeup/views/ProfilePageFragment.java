@@ -83,7 +83,8 @@ public class ProfilePageFragment extends Fragment {
                 if(profile.getProviderId() != "facebook"){
                     name = "Anonymous User";
                     email = "anonymousUser@gmail.com";
-                    photoUrl = Uri.parse("https://vignette.wikia.nocookie.net/spongebob/images/a/ac/Spongebobwithglasses.jpeg/revision/latest?cb=20121014113150");
+                    //photoUrl = Uri.parse("https://vignette.wikia.nocookie.net/spongebob/images/a/ac/Spongebobwithglasses.jpeg/revision/latest?cb=20121014113150");
+                    photoUrl = Uri.parse("android.resource:com.humber.bookmeup"+R.drawable.bookmeup);
                     uid = "9";
                 }
                 else{
