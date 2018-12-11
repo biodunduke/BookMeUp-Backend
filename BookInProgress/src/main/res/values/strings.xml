@@ -52,7 +52,7 @@
     <string name="set_sw1">Light Theme</string>
     <string name="anonUser">Anonymous User</string>
     <string name="logout_title">Logout</string>
-    <string name="logout_msg">Are you sure you want to log out ?</string>
+    <string name="logout_msg">Are you sure you want to log out?</string>
     <string name="logout_yes">Yes</string>
     <string name="login_title">Hope to see you next time</string>
     <string name="logout_no">No</string>

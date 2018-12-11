@@ -49,9 +49,9 @@
     <string name="set_save">Enregistrer les paramÃ¨tres</string>
     <string name="set_sw1">ThÃ¨me LumiÃ¨re</string>
     <string name="anonUser">Utilisateur anonyme</string>
-    <string name="logout_title">Logout</string>
-    <string name="logout_msg">Are you sure you want to log out ?</string>
-    <string name="logout_yes">Yes</string>
-    <string name="login_title">Hope to see you next time</string>
-    <string name="logout_no">No</string>
+    <string name="logout_title">Connectez - Out</string>
+    <string name="logout_msg">ÃŠtes-vous sÃ»r de vouloir vous dÃ©connecter?</string>
+    <string name="logout_yes">Oui</string>
+    <string name="login_title">J\'espÃ¨re vous voir la prochaine fois</string>
+    <string name="logout_no">Non</string>
 </resources>
