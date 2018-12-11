@@ -8,27 +8,20 @@
     tools:context=".views.SettingsActivity">
 
     <Button
-        android:id="@+id/out_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/logout_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/set_save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/set_save"
+        android:background="@drawable/circlebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="375dp" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -45,6 +38,7 @@
         app:layout_constraintGuide_end="12dp" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="343dp"
         android:layout_height="359dp"
         android:layout_marginStart="8dp"

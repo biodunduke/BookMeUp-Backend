@@ -80,20 +80,22 @@ public class ProfilePageFragment extends Fragment {
                 Log.d("AUTH_RPOVIDER",profile.getProviderId());
                 // Id of the provider (ex: google.com)
                 //handle anonymous users
-                if(profile.getProviderId() != "facebook"){
-                    name = "Anonymous User";
+                providerId = profile.getProviderId();
+
+                if(!providerId.equals("facebook.com")){
+                    name = getString(R.string.anonUser);
                     email = "anonymousUser@gmail.com";
-                    photoUrl = Uri.parse("https://vignette.wikia.nocookie.net/spongebob/images/a/ac/Spongebobwithglasses.jpeg/revision/latest?cb=20121014113150");
+                    photoUrl = Uri.parse("https://cdn.onlinewebfonts.com/svg/img_163051.png");
                     uid = "9";
                 }
                 else{
-                    providerId = profile.getProviderId();
                     // UID specific to the provider
                     uid = profile.getUid();
                     // Name, email address, and profile photo Url from facebook.
                     name = profile.getDisplayName();
                     email = profile.getEmail();
                     photoUrl = profile.getPhotoUrl();
+                    //    photoUrl = Uri.parse("android.resource:com.humber.bookmeup/"+R.drawable.ic_menu_profile);
                 }
             }
         }
